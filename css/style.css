@@ -2,14 +2,16 @@ charset "utf-8";
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
 .container-fluid{position: relative; min-height: 100%;}
-#header,#header h5,#logo,#section{position: relative;}
+#header,#header h5,#logo,#section,#menu,#setClient,#setClient nav,#setSup{position: relative;}
 #body{
 	background-color: #2b363a;}
 #header{
 	display: block;
-	height: 300px;
+	height: 170px;
+	border-bottom: 2px solid white;
+	box-shadow: 2px 2px 4px black;
 	text-align: center;}
-#header h5{top: 30px; color: white; font-family: "Lato",sans-serif; font-weight: normal;}
+#header h5{top: 20px; color: white; font-family: "Lato",sans-serif; font-weight: normal;}
 #logo{
 	display: block;
 	width: 250px;
@@ -17,7 +19,78 @@ html,body{height: 100%;}
 	background: url("../img/logo.png");
 	background-size: 280px 70px;
 	background-position: 50%;
-	top: 50px;
+	top: 40px;
 	margin-left: auto;
 	margin-right: auto;}
+#section{display: block; height: 350px;}
+#menu{
+	width: 350px;
+	height: 300px;
+	border: 3px solid white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px black;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;}
+
+#setClient{
+	height: 130px;
+	border-bottom: 3px solid white;}
+#setClient .fa-user-circle{
+	float: left;
+	font-size: 4em;
+	margin-top: 30px;
+	margin-left: 20px;}
+#setClient nav{
+	width: 240px;
+	left: 100px;
+	top: 15px;}
+#setClient ul{list-style: none;}
+#setClient .fa-phone, .fa-search{
+	float: left;
+	margin-left: -60px;
+	font-size: 2em;}
+#setClient .fa-search{font-size: 2em;}
+#setClient li{
+	margin: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	background: orange;
+	text-align: center;
+	font-size: 16px;
+	cursor:pointer;
+	transition: 0.3s;}
+#setClient li:hover{box-shadow: 2px 2px 3px #1D1D1D;}
+#setClient a{
+	text-decoration: none;
+	color: white;
+	font-family: "Lato",sans-serif;}
+
+#setSup{
+	height: 150px;
+	color: white;
+	text-align: center;
+	font-family: "Lato",sans-serif;}
+#setSup h4{font-weight: normal;}
+#setSup .fa-cogs{
+	float: left;
+	font-size: 4em;
+	margin-left: 20px;}
+#btnLogin{
+	width: 150px;
+	padding: 5px;
+	margin-right: auto;
+	margin-left: 160px;
+	margin-top: 25px;
+	background: orange;
+	border-radius: 5px;
+	cursor:pointer;
+	transition: 0.3s;}
+#btnLogin a{
+	text-decoration: none;
+	color: white;
+	font-family: "Lato",sans-serif;
+	font-size: 16px;}
+#btnLogin:hover{box-shadow: 2px 2px 3px #1D1D1D;}
 
