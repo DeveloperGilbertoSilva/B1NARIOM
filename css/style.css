@@ -2,7 +2,22 @@ charset "utf-8";
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
 .container-fluid{position: relative; min-height: 100%;}
-
+#header,#header h5,#logo,#section{position: relative;}
 #body{
-	background-color: #2b363a;
-}
+	background-color: #2b363a;}
+#header{
+	display: block;
+	height: 300px;
+	text-align: center;}
+#header h5{top: 30px; color: white; font-family: "Lato",sans-serif; font-weight: normal;}
+#logo{
+	display: block;
+	width: 250px;
+	height: 90px;
+	background: url("../img/logo.png");
+	background-size: 280px 70px;
+	background-position: 50%;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;}
+
