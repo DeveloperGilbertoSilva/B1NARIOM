@@ -4,16 +4,16 @@ html,body{height: 100%;}
 .container-fluid{position: relative; min-height: 100%;}
 #header,#logo,#section,#setClient,#setClient nav,#setSup{position: relative;}
 .position{position: relative;}
-#body{
-	}
-#header{
+.center{margin-left: auto; margin-right: auto;}
+#body{margin: 0; padding: 0;}
+.header{
 	display: block;
 	height: 120px;
 	border-bottom: 1px solid white;
 	box-shadow: 2px 2px 3px #212121;
 	text-align: center;
 	background-color: #2b363a;}
-#header h5{
+.header h5{
 	color: white;
 	font-family: "Lato",sans-serif;
 	font-weight: normal;}
@@ -24,17 +24,13 @@ html,body{height: 100%;}
 	background: url("../img/logo.png") no-repeat;
 	background-size: 250px 60px;
 	background-position: 50%;
-	top: 20px;
-	margin-left: auto;
-	margin-right: auto;}
-#section{display: block; height: 450px; overflow: hidden; text-align: center;}
+	top: 20px;}
+.section{display: block; max-height: 500px; top: 3px; text-align: center;}
 .menu_indexClass{
-	margin-left: auto;
-	margin-right: auto;
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 2px #999;
 	color: #2b363a;}
-#menu_index{max-width: 350px; height: 395px; top: 30px; padding: 5px; border-radius: 20px;}
+#menu_index{max-width: 350px; height: 395px; top: 30px; margin-bottom: 20px; padding: 5px; border-radius: 20px;}
 /*=========TELA INICIAL (ESPECÍFICO)=========*/
 #setClient{
 	height: 210px;
@@ -51,10 +47,8 @@ html,body{height: 100%;}
 	top: 5px;}
 #setClient ul{
 	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
 	list-style: none;}
-#setClient .fa-phone, .fa-search{
+#setClient .fa-phone, #setClient .fa-search{
 	float: left;
 	margin-left: -25px;
 	font-size: 1.5em;}
@@ -88,9 +82,6 @@ html,body{height: 100%;}
 	display: block;
 	width: 150px;
 	padding: 5px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 25px;
 	background: orange;
 	border-radius: 5px;
@@ -106,9 +97,7 @@ html,body{height: 100%;}
 /*=========ABRIR CHAMADO (ESPECÍFICO)=========*/
 .title_openChamadoClass{
 	max-width: 400px;
-	top: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 50px;
 	padding: 5px 15px;
 	border-radius: 30px;
 	background: orange;
@@ -118,42 +107,38 @@ html,body{height: 100%;}
 .menu_openChamadoClass{
 	max-width: 450px;
 	max-height: 120px;
-	top: 60px;
+	margin-top: 60px;
 	padding: 10px 5px;
 	border-radius: 10px;}
 .menu_openChamadoClass .fa-user-circle{
-	top: 5px;
+	margin-top: 5px;
 	left: 5px;
 	padding: 3px;
 	border: 1px solid black;
 	border-radius: 30px;
 	font-size: 3em;}
-.menu_openChamadoClass input[type="text"],input[type="submit"]{
-	left: 10px;
-	top: -5px;
-	border-radius: 5px;
+.menu_openChamadoInputClass{
+	top: -10px;
 	outline: none;}
 .menu_openChamadoClass input[type="text"]{padding: 2px 7px;}
-.menu_openChamadoClass input[type="submit"]{
+.divBtnOpenChamadoClass{
+	width: 140px;
+	height: 26px;
+	margin-top: 5px;}
+.divBtnOpenChamadoClass i{
+	float: left;
+	margin-top: -7px;
+	color: #2b363a;
+	font-size: 1.5em;}
+.divBtnOpenChamadoClass input[type="submit"]{
 	float: right;
+	left: -5px;
 	right: 0px;
 	font-family: "Lato",sans-serif;
 	font-weight: 600;
 	color: #2b363a; }
-.divBtnOpenChamadoClass{
-	width: 140px;
-	height: 26px;
-	margin-right: auto;
-	margin-left: auto;
-	top: 5px;}
-.divBtnOpenChamadoClass .fa-phone{
-	float: left;
-	top: 4px;
-	color: #2b363a;
-	font-size: 1.5em;}
 #backToHome{
-	top: 100px;
-	text-decoration-style: none;
+	top: 50px;
 	text-decoration: none;
 	font-size: 1.2em;
 	color: grey;}
@@ -161,7 +146,42 @@ html,body{height: 100%;}
 
 /*=========PESQUISAR CHAMADO (ESPECÍFICO)=========*/
 #divBtnSearchChamado{width: 165px;}
+.divBtnOpenChamadoClass input[type="submit"]{left: 1px;}
+/*=========LOGIN (ESPECÍFICO)=========*/
+#headerLogin{height: 250px; color: white;}
+#headerLogin .fa-cogs{font-size: 3em;}
+#login{
+	width:250px;
+	height: 200px;
+	margin-top: 30px;
+	padding: 5px;
+	border: 3px solid grey;}
+#autentication{
+	min-height: 100%;
+	background: white;
+	border: 1px solid grey;}
+#icon_logo{
+	width: 60px;
+	height:80px;
+	float: left;
+	top: 50px;
+	background: url("../img/icon_logo.png")no-repeat;
+	background-size: 60px 60px;
+	background-position: 100%;}
+#form_autentication{
+	position: absolute;
+	max-width: 180px;
+	float: right;
+	right: 10px;
+	top: 20px;
+	background: transparent;
+	font-family: "Lato",sans-serif;}
+#form_autentication input{outline: none;}
+#form_autentication input[type="submit"]{
+	font-family: "Lato",sans-serif;
+	font-weight: 600;
+	color: #2b363a;}
 
 /**========TRATAMENTO DE TELAS===================*/
 @media screen and (min-width: 480px){
-	.divBtnOpenChamadoClass{float: right; top: 18px;} /*==ABRIR CHAMADO==*/}
+	.divBtnOpenChamadoClass{float: right; margin-top: 26px;}}

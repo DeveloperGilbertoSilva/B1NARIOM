@@ -11,22 +11,29 @@
 <body id="body">
 <div class="container-fluid">
   <div class="row">
-    <header id="headerSearchChamado" class="col-xs-12 header">
+    <header id="headerLogin" class="col-xs-12 header">
       <a href="index.html"><div id="logo" class="center"></div></a>
       <h5>Sistema de Controle de Chamado</h5>
+      <br/><h3>Área de Suporte</h3>
+      <i class="fa fa-cogs" aria-hidden="true"></i>
     </header>
   </div>
   <div class="row"> 
-    <section id="sectionSearchChamado" class="col-xs-12 position section">
-      <h1 id="title_searchChamado" class=" center title_openChamadoClass">Para pesquisar digite o número do chamado:</h1>
-      <div id="menu_searchChamado" class=" center menu_indexClass menu_openChamadoClass">
-        <i class="fa fa-user-circle " aria-hidden="true"></i>
-        <input type="text" name="cMatricula" class="position menu_openChamadoInputClass">
-        <div id="divBtnSearchChamado" class=" center divBtnOpenChamadoClass">
-          <i class="fa fa-search " aria-hidden="true"></i>
-          <input type="submit" name="btnAbrirChamado" class="position menu_openChamadoInputClass" value="Pesquisar Chamado">
-        </div>
-    	</div>
+    <section id="sectionLogin" class="col-xs-12 position section">
+      <div class="row">
+      	<div id="login" class="position center telaLoginClass">
+      		<div id="autentication" class="position center">
+      			<div id="icon_logo" class="position"></div>
+      			<div id="form_autentication">
+      				<form method="POST" action="#">
+      					Matrícula:<br/><input type="text" name="cMat"> <br/><br/>
+      					Senha:<br/><input type="text" name="cSenha"><br/><br/>
+      					<input type="submit" name="bntLogar" value="Entrar">
+      				</form>
+      			</div>
+      		</div>
+      	</div>
+      </div>
       <a href="index.html" id="backToHome" class="position"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Voltar ao Início</a>
     </section>
   </div>
