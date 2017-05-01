@@ -10,6 +10,7 @@
 <head>
   <title>B1NARI0M - Sistema de Controle de Chamado</title>
   <meta charset="utf-8">
+  <link rel="icon" href="img/icon_logo_shurt.png" type="imgage/png">
 <!--==================CSS==================-->  
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
