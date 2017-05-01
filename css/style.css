@@ -28,7 +28,7 @@ html,body{height: 100%;}
 	margin-left: auto;
 	margin-right: auto;}
 #section{display: block; height: 450px; overflow: hidden; text-align: center;}
-#menu_index, #menu_openChamado{
+.menu_indexClass{
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid #ccc;
@@ -102,8 +102,9 @@ html,body{height: 100%;}
 	font-family: "Lato",sans-serif;
 	font-size: 16px;}
 #btnLogin:hover{box-shadow: 2px 2px 3px #1D1D1D;}
+
 /*=========ABRIR CHAMADO (ESPECÍFICO)=========*/
-#title_abrirChamado{
+.title_openChamadoClass{
 	max-width: 400px;
 	top: 50px;
 	margin-left: auto;
@@ -114,48 +115,53 @@ html,body{height: 100%;}
 	text-align: center;
 	font-size: 16px;
 	color: white;}
-#menu_openChamado{
+.menu_openChamadoClass{
 	max-width: 450px;
 	max-height: 120px;
 	top: 60px;
 	padding: 10px 5px;
 	border-radius: 10px;}
-#menu_openChamado .fa-user-circle{
+.menu_openChamadoClass .fa-user-circle{
 	top: 5px;
 	left: 5px;
 	padding: 3px;
 	border: 1px solid black;
 	border-radius: 30px;
 	font-size: 3em;}
-#menu_openChamado input[type="text"],input[type="submit"]{
+.menu_openChamadoClass input[type="text"],input[type="submit"]{
 	left: 10px;
 	top: -5px;
 	border-radius: 5px;
 	outline: none;}
-#menu_openChamado input[type="text"]{padding: 2px 7px;}
-#menu_openChamado input[type="submit"]{
+.menu_openChamadoClass input[type="text"]{padding: 2px 7px;}
+.menu_openChamadoClass input[type="submit"]{
 	float: right;
 	right: 0px;
 	font-family: "Lato",sans-serif;
 	font-weight: 600;
 	color: #2b363a; }
-#divBtnAbrirChamado{
+.divBtnOpenChamadoClass{
 	width: 140px;
 	height: 26px;
 	margin-right: auto;
 	margin-left: auto;
 	top: 5px;}
-#divBtnAbrirChamado .fa-phone{
+.divBtnOpenChamadoClass .fa-phone{
 	float: left;
 	top: 4px;
 	color: #2b363a;
 	font-size: 1.5em;}
 #backToHome{
 	top: 100px;
+	text-decoration-style: none;
 	text-decoration: none;
 	font-size: 1.2em;
 	color: grey;}
-#backToHome .fa-home{font-size: 1.9em;}
+#backToHome.fa-home{font-size: 1.9em;}
+
+/*=========PESQUISAR CHAMADO (ESPECÍFICO)=========*/
+#divBtnSearchChamado{width: 165px;}
+
+/**========TRATAMENTO DE TELAS===================*/
 @media screen and (min-width: 480px){
-	#divBtnAbrirChamado{float: right; top: 18px;}}
-@media screen and (min-width: 768px){#menu_index, #menu_openChamado{}}
+	.divBtnOpenChamadoClass{float: right; top: 18px;} /*==ABRIR CHAMADO==*/}
