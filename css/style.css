@@ -2,59 +2,71 @@ charset "utf-8";
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
 .container-fluid{position: relative; min-height: 100%;}
-#header,#header h5,#logo,#section,#menu,#setClient,#setClient nav,#setSup{position: relative;}
+#header,#logo,#section,#setClient,#setClient nav,#setSup{position: relative;}
+.position{position: relative;}
 #body{
-	background-color: #2b363a;}
+	}
 #header{
 	display: block;
-	height: 170px;
-	border-bottom: 2px solid white;
-	box-shadow: 2px 2px 4px black;
-	text-align: center;}
-#header h5{top: 20px; color: white; font-family: "Lato",sans-serif; font-weight: normal;}
+	height: 120px;
+	border-bottom: 1px solid white;
+	box-shadow: 2px 2px 3px #212121;
+	text-align: center;
+	background-color: #2b363a;}
+#header h5{
+	color: white;
+	font-family: "Lato",sans-serif;
+	font-weight: normal;}
 #logo{
 	display: block;
-	width: 250px;
-	height: 90px;
-	background: url("../img/logo.png");
-	background-size: 280px 70px;
+	width: 230px;
+	height: 80px;
+	background: url("../img/logo.png") no-repeat;
+	background-size: 250px 60px;
 	background-position: 50%;
-	top: 40px;
+	top: 20px;
 	margin-left: auto;
 	margin-right: auto;}
-#section{display: block; height: 350px;}
-#menu{
-	width: 350px;
-	height: 300px;
-	border: 3px solid white;
-	border-radius: 5px;
-	box-shadow: 2px 2px 4px black;
-	top: 50px;
+#section{display: block; height: 450px; overflow: hidden;}
+#menu_index, #menu_openChamado{
+	width: 250px;
+	height: 395px;
+	padding: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	color: white;}
-
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #999;
+	top: 30px;
+	color: #2b363a;}
 #setClient{
-	height: 130px;
-	border-bottom: 3px solid white;}
+	height: 210px;
+	border-bottom: 1px solid #2b363a;
+	text-align: center;}
 #setClient .fa-user-circle{
-	float: left;
-	font-size: 4em;
-	margin-top: 30px;
-	margin-left: 20px;}
+	font-size: 3em;
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 30px;
+	padding: 3px;}
 #setClient nav{
-	width: 240px;
-	left: 100px;
-	top: 15px;}
-#setClient ul{list-style: none;}
+	display: block;
+	top: 5px;}
+#setClient ul{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style: none;}
 #setClient .fa-phone, .fa-search{
 	float: left;
-	margin-left: -60px;
-	font-size: 2em;}
-#setClient .fa-search{font-size: 2em;}
+	margin-left: -25px;
+	font-size: 1.5em;}
+#setClient .fa-search{font-size: 1.5em;}
 #setClient li{
+	width: 150px;
 	margin: 20px;
 	padding: 5px;
+	left: -10px;
 	border-radius: 5px;
 	background: orange;
 	text-align: center;
@@ -68,20 +80,21 @@ html,body{height: 100%;}
 	font-family: "Lato",sans-serif;}
 
 #setSup{
-	height: 150px;
-	color: white;
+	display: block;
+	height: 160px;
+	top: 10px;
+	color: #2b363a;
 	text-align: center;
 	font-family: "Lato",sans-serif;}
 #setSup h4{font-weight: normal;}
-#setSup .fa-cogs{
-	float: left;
-	font-size: 4em;
-	margin-left: 20px;}
+#setSup .fa-cogs{font-size: 3em;}
 #btnLogin{
+	display: block;
 	width: 150px;
 	padding: 5px;
 	margin-right: auto;
-	margin-left: 160px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 25px;
 	background: orange;
 	border-radius: 5px;
@@ -94,3 +107,5 @@ html,body{height: 100%;}
 	font-size: 16px;}
 #btnLogin:hover{box-shadow: 2px 2px 3px #1D1D1D;}
 
+@media screen and (min-width: 480px){#menu_index, #menu_openChamado{width: 300px;}}
+@media screen and (min-width: 768px){#menu_index, #menu_openChamado{width: 350px;}}
