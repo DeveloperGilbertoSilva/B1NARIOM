@@ -6,20 +6,34 @@ html,body{height: 100%;}
 .header{
     max-height: 100px;
     background: #e25e28;
-    text-align: center;
+    text-align: left;
     color: white;}
 #logo{display: none;}
+#btnMenu{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: -30px;
+    top: -10px;
+    padding: 0px;
+    border: 1px solid white;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 1.8em;
+    color: #ccc5b9;
+    cursor: pointer;}
 
 /* ======TELA_TECNICO====== */
 #sectionTecnico{
     display: block;
-    position: relative;
-    min-height: 350px;}
+    min-height: 100%;
+    background: transparent;}
 .menu{
     font-family: "Lato",sans-serif;
     text-align: center;
     color: white;}
 .menu i{font-size: 1.2em;}
+
 #menuTecnico{
     display: none;
     position: absolute;
@@ -29,7 +43,7 @@ html,body{height: 100%;}
 #menuTecnico .fa-user-circle-o{top: 20px; font-size: 3em;}
 #menuTecnico li:nth-child(4){top: 100px;}
 
-#menuChamado{text-align: left;}
+#menuChamado{margin-top: 5%;text-align: left;}
 #menuChamado li{
     max-width: 200px;
     margin: 20px;
@@ -37,17 +51,3 @@ html,body{height: 100%;}
     border-radius: 5px;
     background: #252422;}
 #menuChamado i{float: left;}
-#aberto{
-    position: relative;
-    float: right;
-    top: -15px;
-    left: 15px;
-    width: 25px; 
-    height: 25px;
-    background: orange;
-    border-radius: 25px;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    padding: 5px 0px;
-}

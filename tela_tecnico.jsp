@@ -16,6 +16,10 @@
         <link rel="stylesheet" type="text/css" href="css/style_telas.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                crossorigin="anonymous"
+        </script>
+        <script src="js/script.js"></script>
     </head>
     <body id="body">
         <div class="container-fluid">
@@ -23,6 +27,7 @@
                 <header id="headerTecnico" class="header position col-xs-12">
                     <div id="logo"></div>
                     <h3><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h3>
+                    <div id="btnMenu" class="position"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
                 </header>
                 <nav id="menuTecnico" class="menu col-xs-12">
                     <i class="position fa fa-user-circle-o"></i><br/><br/>
@@ -34,12 +39,12 @@
                         <li class="position"><i class="fa fa-sign-out"></i> Logout</li>                     
                     </ul>
                 </nav>
-                <section id="sectionTecnico" class="col-xs-12">
+                <section id="sectionTecnico" class="position col-xs-12">
                     <div class="row">
                         <nav id="menuChamado" class="menu col-xs-12">
                             <ul type="none">
                                 <li><i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Abertos
-                                    <div id="aberto">!</div>
+
                                 </li>
                               <li><i class="glyphicon glyphicon-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Em andamento
                                   
