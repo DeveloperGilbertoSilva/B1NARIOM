@@ -1,7 +1,7 @@
 charset "utf-8";
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
-.container-fluid{position: relative; min-height: 100%;}
+.container-fluid{position: relative; min-height: 100%; background: #fffcf2;}
 #header,#logo,#section,#setClient,#setClient nav,#setSup{position: relative;}
 .position{position: relative;}
 .center{margin-left: auto; margin-right: auto;}
@@ -12,7 +12,7 @@ html,body{height: 100%;}
 	border-bottom: 1px solid white;
 	box-shadow: 2px 2px 3px #212121;
 	text-align: center;
-	background-color: #2b363a;}
+	background-color: #252422;}
 .header h5{
 	color: white;
 	font-family: "Lato",sans-serif;
@@ -29,8 +29,8 @@ html,body{height: 100%;}
 .menu_indexClass{
 	border: 1px solid #ccc;
 	box-shadow: 2px 2px 2px #999;
-	color: #2b363a;}
-#menu_index{max-width: 350px; height: 395px; top: 30px; margin-bottom: 20px; padding: 5px; border-radius: 20px;}
+	color: #252422;}
+#menu_index{max-width: 300px; height: 395px; margin-top: 70px; margin-bottom: 20px; padding: 5px; border-radius: 10px;}
 /*=========TELA INICIAL (ESPECÍFICO)=========*/
 #setClient{
 	height: 210px;
@@ -46,7 +46,7 @@ html,body{height: 100%;}
 	display: block;
 	top: 5px;}
 #setClient ul{
-	width: 200px;
+	max-width: 250px;
 	list-style: none;}
 #setClient .fa-phone, #setClient .fa-search{
 	float: left;
@@ -54,12 +54,12 @@ html,body{height: 100%;}
 	font-size: 1.5em;}
 #setClient .fa-search{font-size: 1.5em;}
 #setClient li{
-	width: 150px;
+	max-width: 180px;
 	margin: 20px;
 	padding: 5px;
 	left: -10px;
 	border-radius: 5px;
-	background: orange;
+	background: #eb5e28;
 	text-align: center;
 	font-size: 16px;
 	cursor:pointer;
@@ -73,7 +73,7 @@ html,body{height: 100%;}
 	display: block;
 	height: 160px;
 	top: 10px;
-	color: #2b363a;
+	color: #252422;
 	text-align: center;
 	font-family: "Lato",sans-serif;}
 #setSup h4{font-weight: normal;}
@@ -83,7 +83,7 @@ html,body{height: 100%;}
 	width: 150px;
 	padding: 5px;
 	margin-top: 25px;
-	background: orange;
+	background: #eb5e28;
 	border-radius: 5px;
 	cursor:pointer;
 	transition: 0.3s;}
@@ -97,37 +97,36 @@ html,body{height: 100%;}
 /*=========ABRIR CHAMADO (ESPECÍFICO)=========*/
 .title_openChamadoClass{
 	max-width: 400px;
-	margin-top: 50px;
+	top: 80px;
 	padding: 5px 15px;
 	border-radius: 30px;
-	background: orange;
+	background: #eb5e28;
 	text-align: center;
 	font-size: 16px;
 	color: white;}
 .menu_openChamadoClass{
-	max-width: 450px;
+	max-width: 500px;
 	max-height: 120px;
-	margin-top: 60px;
+	margin-top: 100px;
 	padding: 10px 5px;
 	border-radius: 10px;}
 .menu_openChamadoClass .fa-user-circle{
 	margin-top: 5px;
-	left: 5px;
 	padding: 3px;
 	border: 1px solid black;
 	border-radius: 30px;
 	font-size: 3em;}
 .menu_openChamadoInputClass{
-	top: -10px;
+        top: -10px;
 	outline: none;}
 .menu_openChamadoClass input[type="text"]{padding: 2px 7px;}
 .divBtnOpenChamadoClass{
 	width: 140px;
 	height: 26px;
-	margin-top: 5px;}
+        top: -10px;
+        left: -5px;}
 .divBtnOpenChamadoClass i{
 	float: left;
-	margin-top: -7px;
 	color: #2b363a;
 	font-size: 1.5em;}
 .divBtnOpenChamadoClass input[type="submit"]{
@@ -145,7 +144,7 @@ html,body{height: 100%;}
 #backToHome.fa-home{font-size: 1.9em;}
 
 /*=========PESQUISAR CHAMADO (ESPECÍFICO)=========*/
-#divBtnSearchChamado{width: 165px;}
+#divBtnSearchChamado{min-width: 180px;}
 .divBtnOpenChamadoClass input[type="submit"]{left: 1px;}
 /*=========LOGIN (ESPECÍFICO)=========*/
 #headerLogin{height: 250px; color: white;}

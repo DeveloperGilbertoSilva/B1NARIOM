@@ -1,8 +1,16 @@
+<%-- 
+    Document   : login
+    Created on : 01/05/2017, 15:32:12
+    Author     : TestAdministrador
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>B1NARI0M - Abrir Chamado</title>
-	<meta charset="utf-8">
+  <title>Login em B1NARI0M</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/icon_logo_shurt.png" type="imgage/png">
 <!--==================CSS==================-->  
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -12,7 +20,7 @@
 <div class="container-fluid">
   <div class="row">
     <header id="headerLogin" class="col-xs-12 header">
-      <a href="index.html"><div id="logo" class="center"></div></a>
+      <a href="index.jsp"><div id="logo" class="center"></div></a>
       <h5>Sistema de Controle de Chamado</h5>
       <br/><h3>Área de Suporte</h3>
       <i class="fa fa-cogs" aria-hidden="true"></i>
@@ -34,7 +42,7 @@
       		</div>
       	</div>
       </div>
-      <a href="index.html" id="backToHome" class="position"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Voltar ao Início</a>
+      <a href="index.jsp" id="backToHome" class="position"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Voltar ao Início</a>
     </section>
   </div>
 </div>
