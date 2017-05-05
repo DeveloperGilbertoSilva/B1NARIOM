@@ -1,15 +1,17 @@
 @charset "utf-8";
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
-.container-fluid{position: relative; min-height: 100%; background: #fffcf2;}
+.container-fluid{position: relative; min-height: 100%;}
 .position{position: relative;}
-.header{
+.headerClass{
     max-height: 100px;
     background: #e25e28;
     text-align: left;
-    color: white;}
-#logo{display: none;}
-#btnMenu{
+    color: white;
+    z-index: 1;}
+.logo{display: none;}
+.btnMenuClass{
+    display: block;
     width: 35px;
     height: 35px;
     float: right;
@@ -20,34 +22,86 @@ html,body{height: 100%;}
     border-radius: 35px;
     text-align: center;
     font-size: 1.8em;
-    color: #ccc5b9;
+    color: white;
     cursor: pointer;}
 
 /* ======TELA_TECNICO====== */
 #sectionTecnico{
+    position: absolute;
+    min-height: 100%;}
+.sectionClass{
     display: block;
-    min-height: 100%;
-    background: transparent;}
-.menu{
+    text-align: center;
+    color: #252422;}
+.menuClass{
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Lato",sans-serif;
     text-align: center;
     color: white;}
-.menu i{font-size: 1.2em;}
+.menuClass i{font-size: 1.2em;}
 
-#menuTecnico{
+#menuTec-sm{
     display: none;
-    position: absolute;
+    min-width: 100%;
     min-height: 100%;
+    position: absolute;
     background: #252422;
+    color: white;
     z-index: 1;}
-#menuTecnico .fa-user-circle-o{top: 20px; font-size: 3em;}
-#menuTecnico li:nth-child(4){top: 100px;}
+#menuTec-sm .fa-user-circle-o{top: 20px; left: 15px; font-size: 4em;}
+#menuTec-sm li{font-size: 1.2em;}
+#menuTec-sm li:nth-child(4){top: 100px;}
+#menuTec-lg{display: none;}
+#btnCloseMenu{top: 50px; border: none;}
 
-#menuChamado{margin-top: 5%;text-align: left;}
+#menuChamado{
+    min-height: 200px;
+    margin-top: 200px;
+    text-align: left;}
+#menuChamado ul{max-width: 1000px; min-height: 80px; padding: 5px; margin: 10px; border-bottom: 1px solid #333;}
 #menuChamado li{
     max-width: 200px;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     padding: 10px 10px;
     border-radius: 5px;
     background: #252422;}
 #menuChamado i{float: left;}
+#line{width: 300px; height: 1px; background: black; margin-top: 60px;}
+#menuChamado h4{text-align: center; color: #333;}
+
+@media screen and (min-width: 768px){
+    .headerClass{text-align: center; color: white;}
+    .logo{
+        display: block;
+        position: absolute;
+        width: 250px;
+        height: 55px;
+        float: left;
+        left: -30px;
+        background: url("../img/logo.png") no-repeat;
+        background-position: 100%;
+        background-size: 190px 45px;}
+    .btnMenuClass{display: none;}
+    #menuTec-lg{
+        display: block;
+        width: 250px;
+        min-height: 100%;
+        position: absolute;
+        float: left;
+        background: #252422;
+        color: white;}
+    #menuTec-lg .fa-user-circle-o{font-size: 4em;}
+    .topMenu{top: 120px;}
+    #menuTec-lg li{font-size: 1.2em;}
+    #menuTec-lg li:nth-child(4){top: 100px;}
+
+    #menuChamado{margin-top: 300px;}}
+@media screen and (min-width: 992px){
+    #menuChamado li{
+        display: inline-block;
+        margin-left: 40px;}}
+@media screen and (min-width: 1200px){
+    #menuChamado li{margin-left: 60px;}}
