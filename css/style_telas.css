@@ -1,15 +1,22 @@
 @charset "utf-8";
+/*====RESET====*/
 *{margin: auto; padding: auto;}
+ul{list-style: none;}
+a{text-decoration: none;}
 html,body{height: 100%;}
+#body{color: white;}
+
 .container-fluid{position: relative; min-height: 100%;}
 .position{position: relative;}
+/*====HEADER====*/
 .headerClass{
     max-height: 100px;
     background: #e25e28;
     text-align: left;
-    color: white;
     z-index: 1;}
 .logo{display: none;}
+
+/*====HEADER BOTÕES====*/
 .btnMenuClass{
     display: block;
     width: 35px;
@@ -22,39 +29,68 @@ html,body{height: 100%;}
     border-radius: 35px;
     text-align: center;
     font-size: 1.8em;
-    color: white;
     cursor: pointer;}
+#btnCloseMenu{position: absolute; float: right; right: 5px; top: 50px; border: none;}
 
-/* ======TELA_TECNICO====== */
+/*====SECTION====*/
 #sectionTecnico{
     position: absolute;
     min-height: 100%;}
 .sectionClass{
     display: block;
-    text-align: center;
-    color: #252422;}
+    text-align: center;}
+
+/*====MENUS====*/
 .menuClass{
     margin-left: auto;
     margin-right: auto;
     font-family: "Lato",sans-serif;
-    text-align: center;
-    color: white;}
+    text-align: center;}
 .menuClass i{font-size: 1.2em;}
-
+.menuClass li{cursor: pointer;}
 #menuTec-sm{
     display: none;
     min-width: 100%;
     min-height: 100%;
     position: absolute;
     background: #252422;
-    color: white;
     z-index: 1;}
-#menuTec-sm .fa-user-circle-o{top: 20px; left: 15px; font-size: 4em;}
-#menuTec-sm li{font-size: 1.2em;}
-#menuTec-sm li:nth-child(4){top: 100px;}
-#menuTec-lg{display: none;}
-#btnCloseMenu{top: 50px; border: none;}
+#menuTec-sm .fa-user-circle-o{top: 20px; font-size: 4em;}
+#menuTec-sm li{font-size: 1.2em; cursor: pointer;}
+#menuTec-sm ul{top: 100px;}
+.btnLogout{
+    top: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: grey;}
 
+/*====SUBMENU====*/
+#subMenuEquipamento-sm{
+    display: none;
+    max-width: 250px;
+    min-height: 100%;
+    top: 10px;
+    text-align: center;}
+#subMenuEquipamento-sm ul{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;}
+#subMenuEquipamento-sm li{
+    max-width: 170px;
+    margin-left: -22px;
+    margin-right: auto;
+    margin-top: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 0.9em;}
+#upMenu-sm{display: none;}/*====LI USADA PARA FAZER O SUBMENU DESAPARECER NOVAMENTE====*/
+
+
+#menuTec-lg{display: none;}/*====O MENU PARA RESOLUÇÕES MAIORES SÓ DEVE APARECER QUANDO LHE FOR ADEQUADO, PORTANTO FICARÁ NONE====*/
+
+/*====MENU CENTRAL DE CHAMADOS====*/
 #menuChamado{
     min-height: 200px;
     margin-top: 200px;
@@ -69,9 +105,9 @@ html,body{height: 100%;}
     border-radius: 5px;
     background: #252422;}
 #menuChamado i{float: left;}
-#line{width: 300px; height: 1px; background: black; margin-top: 60px;}
 #menuChamado h4{text-align: center; color: #333;}
 
+/*====TRATAMENTO DE RESOLUÇÕES====*/
 @media screen and (min-width: 768px){
     .headerClass{text-align: center; color: white;}
     .logo{
@@ -85,23 +121,49 @@ html,body{height: 100%;}
         background-position: 100%;
         background-size: 190px 45px;}
     .btnMenuClass{display: none;}
+    #btnCloseMenu{display: block;}
+    #menuTec-sm{display: none;}
+    
     #menuTec-lg{
         display: block;
         width: 250px;
         min-height: 100%;
         position: absolute;
         float: left;
-        background: #252422;
-        color: white;}
+        background: #252422;}
     #menuTec-lg .fa-user-circle-o{font-size: 4em;}
-    .topMenu{top: 120px;}
+    .topMenu{top: 100px;}
+    #menuTec-lg ul{top: 120px;}
     #menuTec-lg li{font-size: 1.2em;}
-    #menuTec-lg li:nth-child(4){top: 100px;}
+    #btnLogout-lg{top: 70px;}
+    
+    #subMenuEquipamento-lg{
+        display: none;
+        max-width: 250px;
+        min-height: 100%;
+        top: 10px;
+        text-align: center;}
+    #subMenuEquipamento-lg ul{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;}
+    #subMenuEquipamento-lg li{
+        max-width: 170px;
+        margin-left: -22px;
+        margin-right: auto;
+        margin-top: 15px;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 0.9em;}
+    #upMenu-lg{display: none;}
 
     #menuChamado{margin-top: 300px;}}
+
 @media screen and (min-width: 992px){
     #menuChamado li{
         display: inline-block;
         margin-left: 40px;}}
+
 @media screen and (min-width: 1200px){
     #menuChamado li{margin-left: 60px;}}
