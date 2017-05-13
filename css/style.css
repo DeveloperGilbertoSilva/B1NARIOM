@@ -1,49 +1,72 @@
 *{margin: auto; padding: auto;}
 html,body{height: 100%;}
-#body{color: white;}
+.body{color: white;}
+/*======================Classes comuns a serem herdadas======================*/
 .container-fluid{min-height: 100%; background: #eb5e28;}
 .position{position: relative;}
 .display{display: block;}
 .margin{margin-left: auto; margin-right: auto;}
 .i{font-size: 3.5em;}
-#sectionHome{
+/*============================================*/
+
+/*======================SECTION======================*/
+.section{
     position: absolute;
     width: 100%;
     min-height: 100%;
-    background: #eb5e28;
     text-align: center;
     font-family: "Lato",sans-serif;}
-#divHeader{
+/*======================Logo e descrição======================*/
+.divHeader{
     height: 90px;
     margin-top: 50px;}
-#divHeader h5{top: -15px;}
-#logo{
+.divHeader h5{top: -15px;}
+.logo{
     position: relative;
     width: 220px;
     height: 60px;
     background: url("../img/logo.png");
     background-position: 50%;
     background-size: cover;}
-#opSetor{
+/*============================================*/
+/*======================Links de redirecionamento======================*/
+.opSetor{
     height: 300px;
     margin-top: 5%;
     padding: 40px 0px;
     border-top: 1px solid white;}
-#opSetor a{
+.opSetor a{
     font-size: 1em;
     text-decoration: none;
     color: white;}
-#setClient, #setAdmin{
+.setClient, .setAdmin{
     width: 150px;
     height: 100px;}
-#setAdmin{top: 20px;}
-
+.setAdmin{top: 20px;}
+/*===========loginClient.jsp, loginB1nari0m.jsp===========*/
+#divLoginClient, #divLoginAdmin{border-top: none;}
+.formLogin{
+    margin: 0;
+    padding: 0;}
+.inputText{
+    padding: 5px 5px;
+    border-color: transparent transparent white transparent;
+    background: transparent;
+    outline: none;}
+.btnLogin{
+    border: 1px solid white;
+    background: #666;
+    border-radius: 3px;
+    outline: none;}
+/*======================*/
+/*============================================*/
+/*======================TRATAMENTO DE RESOLUÇÕES======================*/
 @media screen and (min-width: 1200px){
-    #sectionHome{
+    .section{
         width: 70%;
         right: 0;
         left: 0;}
-    #divHeader{
+    .divHeader{
         position: absolute;
         top: 0;
         left: 150px;
@@ -52,8 +75,8 @@ html,body{height: 100%;}
         width: 240px;
         height: 90px;
         margin-top: auto;}
-    #logo{width: 240px; height: 70px;}
-    #opSetor{
+    .logo{width: 240px; height: 70px;}
+    .opSetor{
         position: absolute;
         height: 100px;
         top: 0;
@@ -64,9 +87,29 @@ html,body{height: 100%;}
         padding: 0px;
         border-top: none;
         border-left: 1px solid white;}
-    #setClient{float: left;} 
-    #setAdmin{
+    .setClient{float: left;} 
+    .setAdmin{
         top: 0;
         left: -80px;
         float: right;}
-}
+
+    /*===========loginClient.jsp, loginB1nari0m.jsp===========*/
+    #divLoginClient, #divLoginAdmin{
+        height: 200px;
+        border-left: 1px solid white;}
+    #setClientLogin, #setAdminLogin{
+        width: 300px;
+        height: 200px;
+        left: 20px;}
+    #setClientLogin .fa-user-circle-o, #setAdminLogin .fa-cogs{float: left; margin-top: 70px;}
+    .formLogin{
+        display: block;
+        position: absolute;
+        width: 70%;
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        right: 0;
+        float: left;}
+    /*======================*/
+    /*============================================*/
