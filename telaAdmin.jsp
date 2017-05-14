@@ -33,7 +33,7 @@
                         <div class="dadosPerfil">
                             <div id="nomeAdmin" class="margin nome">Gilberto Lopes</div>
                             <h4 class="titleMat">Matrícula:</h4>
-                            <div id="matriculAdmin" class="margin matricula">xxxxx-x</div>
+                            <div id="matriculaAdmin" class="margin matricula">xxxxx-x</div>
                             <h5 id="titleSetorAdmin" class="titleSetor">Área Administrativa</h5>
                         </div>
                         <!--==============================================-->

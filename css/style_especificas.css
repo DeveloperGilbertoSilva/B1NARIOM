@@ -41,7 +41,7 @@ html,body{height: 100%;}
     height: auto;
     padding: 5px;
     border-bottom: 1px solid white;}
-.nome, .matricula{
+.nome, .matricula, .setor,.telefone{
     max-width: 200px;
     height: auto;
     padding: 10px 5px;
@@ -49,18 +49,12 @@ html,body{height: 100%;}
     text-align: center;
     font-size: 18px;}
 .matricula{margin-top: -10px;}
-.titleMat{
+.titleMat,.titleSetor,.titleTelefone{
     width: 100px;
     padding: 3px;
     border-radius: 3px;
     background: #666;}
-.titleSetor{
-    width: 150px;
-    padding: 5px;
-    margin-top: 20px;
-    border-radius: 3px;
-    border: 1px solid white;
-    background: #333;}
+
 /*============================================*/
 
 /*======================MENU PERFIL======================*/
@@ -80,16 +74,23 @@ html,body{height: 100%;}
     color: white;
     cursor: default;}
 .op{
-    width: 100px;
+    width: 150px;
+    padding: 3px 10px;
     border-radius: 3px;
     border: 1px solid #999;
     font-size: 18px;
     text-align: center;
     cursor: pointer;}
-#liVisaoGeralAdmin{margin-bottom: 30px;}
-#liVisaoGeralAdmin h5{
+.op i{float: right;}
+#liVisaoGeralAdmin, #liVisaoGeralTecnico{margin-bottom: 30px;}
+#liVisaoGeralAdmin h5,#liVisaoGeralTecnico h5, #liPesquisarChamado h5{
     width: 150px;
     border: none;}
+#liPesquisarChamado{
+    margin-top: 20px;
+    margin-bottom: 20px;}
+#liPesquisarChamado h5{width: 200px;}
+#liVisaoGeralAdmin i,#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
 .ulSubMenu{
     width: 200px;
     height: 50px;
@@ -99,7 +100,8 @@ html,body{height: 100%;}
     margin: 0px auto 10px auto;
     border-radius: 3px;
     background: grey;}
-#ulSubMenuCliente,#ulSubMenuUsuario,#ulSubMenuMenu,#ulSubMenuPerfil{display: none;}
+.liSubMenu a{cursor: pointer;}
+#ulSubMenuCliente,#ulSubMenuUsuario,#ulSubMenuMenu,#ulSubMenuPerfil,#ulSubMenuChamado,#ulSubMenuEquipamento{display: none;}
 /*============================================*/
 
 /*======================CONTROLE CHAMADO======================*/
@@ -108,6 +110,7 @@ html,body{height: 100%;}
     position: absolute;
     min-height: 100%;
     background: white;}
+
 .headerSection{
     width: 100%;
     height: 130px;
@@ -153,6 +156,45 @@ html,body{height: 100%;}
     font-size: 18px;
     font-family: "Lato-Light";
     text-align: left;}
+/*=========telaCliente=========*/
+.divFormAbrirChamado{
+    width: 320px;
+    height: 330px;
+    overflow: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;}
+.formAbrirChamado{
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999;
+    text-align: center;
+    font-family: "Lato-Light";
+    color: #252422;}
+.labelChamado{
+    font-size: 18px;}
+.formAbrirChamado textarea{
+    border: 1px solid orange;
+    border-radius: 3px;
+    color: black;
+    outline: none;}
+.inputChamado{
+    width: 200px;
+    border-color: transparent transparent orange transparent;
+    background: none;
+    text-align: center;
+    outline: none;}
+.btnAbrirChamado{
+    border: none;
+    border-radius: 5px;
+    background: #eb5e28;
+    font-size: 16px;
+    color: white;
+    outline: none;}
+/*==================*/
 /*============================================*/
 /*======================TRATAMENTO DE RESOLUÇÕES======================*/
 @media screen and (min-width: 991px){
@@ -175,5 +217,11 @@ html,body{height: 100%;}
         display: inline-block;
         width: 160px;
         margin-left: 20px;
-        font-size: 16px;}}
+        font-size: 16px;}
+/*=========telaCliente=========*/
+.divFormAbrirChamado{}
+.formAbrirChamado{
+    
+}}
+/*==================*/
 /*============================================*/
