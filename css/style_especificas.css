@@ -1,0 +1,176 @@
+*{margin: auto; padding: auto;}
+html,body{height: 100%;}
+.body{color: white;}
+/*======================Classes comuns a serem herdadas======================*/
+.container-fluid{min-height: 100%; background: #eb5e28;}
+.position{position: relative;}
+.display{display: block;}
+.margin{margin-left: auto; margin-right: auto;}
+.i{font-size: 3.5em;}
+/*============================================*/
+/*======================Dados do perfil======================*/
+.logo{display: none;}
+.divDadosPerfil{
+    display: none;
+    position: absolute;
+    min-height: 100%;
+    background: #252422;
+    text-align: center;
+    font-family: "Lato",sans-serif;}
+.divDadosPerfil .fa-user-circle-o{margin-top: 50px;}
+.btnCloseMenu,.btnOpenMenu{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    float: right;
+    top: 20px;
+    right: 20px;
+    padding: 3px 0px; 
+    border-radius: 30px;
+    border: 2px solid white;
+    background: #eb5e28;
+    text-align: center;
+    cursor: pointer;}
+.dadosPerfil{
+    width: 230px;
+    height: auto;
+    padding: 10px;
+    border-bottom: 1px solid white;}
+.nome, .matricula{
+    max-width: 200px;
+    height: auto;
+    padding: 10px 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;}
+.matricula{margin-top: -10px;}
+.titleMat{
+    width: 100px;
+    padding: 3px;
+    border-radius: 3px;
+    background: #666;}
+.titleSetor{
+    width: 150px;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background: #333;}
+/*============================================*/
+
+/*======================MENU PERFIL======================*/
+.divMenuPerfil{
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;}
+.navMenu{}
+.ulMenu, .ulSubMenu{
+    padding: 0;
+    list-style: none;}
+.liMenu{
+    max-width: 220px;
+    height: auto;
+    margin: 10px auto 10px auto;}
+.liMenu a{
+    text-decoration: none;
+    color: white;}
+.liMenu h5{
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background: #333;
+    font-size: 18px;
+    text-align: center;}
+#liVisaoGeralAdmin{margin-bottom: 30px;}
+#liVisaoGeralAdmin h5{
+    width: 150px;
+    border: none;
+    background: none;
+}
+.ulSubMenu{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;}
+.liSubMenu{
+    width: 150px;
+    margin: 0px auto 10px auto;
+    border-radius: 3px;
+    background: grey;}
+#ulSubMenuCliente,#ulSubMenuUsuario,#ulSubMenuMenu,#ulSubMenuPerfil{display: none;}
+/*============================================*/
+
+/*======================CONTROLE CHAMADO======================*/
+.controleChamado{
+    display: block;
+    position: absolute;
+    min-height: 100%;
+    background: white;}
+.headerSection{
+    width: 100%;
+    height: 130px;
+    margin-top: -20px;
+    border-bottom: 1px solid #252422;
+    text-align: center;
+    font-family: "Lato",sans-serif;}
+.btnOpenMenu{
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;}
+.headerSection h3{top: 70px; color: #252422; font-size: 1.5em;}
+.menuControleChamado{
+    height: 300px;
+    margin-top: 15%;
+    margin-bottom: 5px;}
+.ulControleChamado{
+    list-style: none;
+    padding: 0;
+    font-family: "Lato",sans-serif;
+    font-size: 1.3em;
+    text-align: left;}
+.liControle{
+    width: 190px;
+    height: 50px;
+    margin: 10px auto 10px auto;
+    padding: 15px 15px;
+    box-shadow: 1px 1px 2px #999;
+    background: white;}
+.liControle a{
+    text-decoration: none;
+    color: #252422;}
+.totalChamado{
+    width: 200px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #252422;
+    font-size: 18px;
+    font-family: "Lato",sans-serif;
+    text-align: left;}
+/*============================================*/
+/*======================TRATAMENTO DE RESOLUÇÕES======================*/
+@media screen and (min-width: 991px){
+    .divDadosPerfil{display: block;}
+     .logo{
+        display: block;
+        height: 60px;
+        background: #eb5e28;}
+     .imgLogo{
+         width: 200px;
+         height: 50px;
+         top: 5px;
+         background: url("../img/logo.png");
+         background-position: 50%;
+         background-size: cover;}
+    .btnCloseMenu, .btnOpenMenu{display: none;}
+    .menuControleChamado{margin-top: 150px;}
+    .ulControleChamado{width: 750px;}
+    .liControle{
+        display: inline-block;
+        width: 160px;
+        margin-left: 20px;
+        font-size: 16px;}}
+/*============================================*/
