@@ -27,6 +27,7 @@
                         <div class="position logo col-xs-12">
                             <div class="position imgLogo"></div>
                         </div>
+                        <!--=======================DADOS PERFIL=======================-->
                         <i class="i fa fa-user-circle-o"></i>
                         <div class="btnCloseMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
                         <div class="dadosPerfil">
@@ -35,30 +36,50 @@
                             <div id="matriculAdmin" class="margin matricula">xxxxx-x</div>
                             <h5 id="titleSetorAdmin" class="titleSetor">Área Administrativa</h5>
                         </div>
-
+                        <!--==============================================-->
                         <div id="divMenuPerfilAdmin" class="divMenuPerfil">
                             <nav id="navMenuAdmin" class="navMenu">
                                 <ul id="ulMenuAdmin" class="ulMenu" type="none">
-                                    <li id="liVisaoGeralAdmin" class="liMenu"><a href="#"><h5><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5></a></li>
-                                    <li id="liCliente" class="liMenu"><a href="#"><h5>Cliente &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5></a>
+                                    <li id="liVisaoGeralAdmin" class="liMenu">
+                                        <a href="#">
+                                            <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
+                                        </a>
+                                    </li>
+
+                                    <li id="liCliente" class="liMenu">
+                                        <a href="#">
+                                            <h5 id="opCliente" class="op">Cliente &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                        </a>
                                         <ul id="ulSubMenuCliente" class="margin ulSubMenu" type="none">
                                             <li id="liSubMenuInsereCliente" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</a></li>
                                             <li id="liSubMenuListaCliente" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Cliente</a></li>
                                         </ul>
                                     </li>
-                                    <li id="liUsuario" class="liMenu"><a href="#"><h5>Usuário &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5></a>
+
+                                    <li id="liUsuario" class="liMenu">
+                                        <a href="#">
+                                            <h5 id="opUsuario" class="op">Usuário &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                        </a>
                                         <ul id="ulSubMenuUsuario" class="margin ulSubMenu" type="none">
                                             <li id="liSubMenuInsereUsuario" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Usuário</a></li>
                                             <li id="liSubMenuListaUsuario" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Usuário</a></li>
                                         </ul>
                                     </li>
-                                    <li id="liMenu" class="liMenu"><a href="#"><h5>Menu &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5></a>
+
+                                    <li id="liMenu" class="liMenu">
+                                        <a href="#">
+                                            <h5 id="opMenu" class="op">Menu &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                        </a>
                                         <ul id="ulSubMenuMenu" class="margin ulSubMenu" type="none">
                                             <li id="liSubMenuInsereMenu" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Menu</a></li>
                                             <li id="liSubMenuListaMenu" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Menu</a></li>
                                         </ul>
                                     </li>
-                                    <li id="liPerfil" class="liMenu"><a href="#"><h5>Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5></a>
+
+                                    <li id="liPerfil" class="liMenu">
+                                        <a href="#">
+                                            <h5 id="opPerfil" class="op">Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                        </a>
                                         <ul id="ulSubMenuPerfil" class="margin ulSubMenu" type="none">
                                             <li id="liSubMenuInserePerfil" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
                                             <li id="liSubMenuListaPerfil" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>

@@ -1,8 +1,12 @@
 *{margin: auto; padding: auto;}
+@font-face{
+    font-family: "Lato-Light";
+    src: url("../fonts/Lato-Light.ttf");
+}
 html,body{height: 100%;}
 .body{color: white;}
 /*======================Classes comuns a serem herdadas======================*/
-.container-fluid{min-height: 100%; background: #eb5e28;}
+.container-fluid{min-height: 100%; background: white;}
 .position{position: relative;}
 .display{display: block;}
 .margin{margin-left: auto; margin-right: auto;}
@@ -16,7 +20,8 @@ html,body{height: 100%;}
     min-height: 100%;
     background: #252422;
     text-align: center;
-    font-family: "Lato",sans-serif;}
+    font-family: "Lato-Light";
+    z-index: 1;}
 .divDadosPerfil .fa-user-circle-o{margin-top: 50px;}
 .btnCloseMenu,.btnOpenMenu{
     position: absolute;
@@ -34,13 +39,13 @@ html,body{height: 100%;}
 .dadosPerfil{
     width: 230px;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 1px solid white;}
 .nome, .matricula{
     max-width: 200px;
     height: auto;
     padding: 10px 5px;
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
     font-size: 18px;}
 .matricula{margin-top: -10px;}
@@ -52,7 +57,7 @@ html,body{height: 100%;}
 .titleSetor{
     width: 150px;
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 3px;
     border: 1px solid white;
     background: #333;}
@@ -61,9 +66,8 @@ html,body{height: 100%;}
 /*======================MENU PERFIL======================*/
 .divMenuPerfil{
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;}
-.navMenu{}
+    margin-top: 5px;
+    margin-bottom: 10px;}
 .ulMenu, .ulSubMenu{
     padding: 0;
     list-style: none;}
@@ -73,20 +77,19 @@ html,body{height: 100%;}
     margin: 10px auto 10px auto;}
 .liMenu a{
     text-decoration: none;
-    color: white;}
-.liMenu h5{
+    color: white;
+    cursor: default;}
+.op{
     width: 100px;
     border-radius: 3px;
     border: 1px solid #999;
-    background: #333;
     font-size: 18px;
-    text-align: center;}
+    text-align: center;
+    cursor: pointer;}
 #liVisaoGeralAdmin{margin-bottom: 30px;}
 #liVisaoGeralAdmin h5{
     width: 150px;
-    border: none;
-    background: none;
-}
+    border: none;}
 .ulSubMenu{
     width: 200px;
     height: 50px;
@@ -111,7 +114,7 @@ html,body{height: 100%;}
     margin-top: -20px;
     border-bottom: 1px solid #252422;
     text-align: center;
-    font-family: "Lato",sans-serif;}
+    font-family: "Lato-Light";}
 .btnOpenMenu{
     width: 40px;
     height: 40px;
@@ -126,7 +129,7 @@ html,body{height: 100%;}
 .ulControleChamado{
     list-style: none;
     padding: 0;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato-Light";
     font-size: 1.3em;
     text-align: left;}
 .liControle{
@@ -148,7 +151,7 @@ html,body{height: 100%;}
     border-radius: 5px;
     background: #252422;
     font-size: 18px;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato-Light";
     text-align: left;}
 /*============================================*/
 /*======================TRATAMENTO DE RESOLUÇÕES======================*/
@@ -161,8 +164,8 @@ html,body{height: 100%;}
      .imgLogo{
          width: 200px;
          height: 50px;
-         top: 5px;
-         background: url("../img/logo.png");
+         top: 10px;
+         background: url("../img/logo_small.png");
          background-position: 50%;
          background-size: cover;}
     .btnCloseMenu, .btnOpenMenu{display: none;}

@@ -1,34 +1,38 @@
 $(document).ready(function(){
-    $("#liCliente").click(function(){
+    $("#opCliente").click(function(){
         $("#ulSubMenuCliente").slideDown(200);
     });
-    $("#liCliente").dblclick(function(){
+    $("#opCliente").dblclick(function(){
         $("#ulSubMenuCliente").slideUp(200);
     });
-    $("#liUsuario").click(function(){
+    $("#opUsuario").click(function(){
         $("#ulSubMenuUsuario").slideDown(200);
     });
-    $("#liUsuario").dblclick(function(){
+    $("#opUsuario").dblclick(function(){
         $("#ulSubMenuUsuario").slideUp(200);
     });
-    $("#liMenu").click(function(){
+    $("#opMenu").click(function(){
         $("#ulSubMenuMenu").slideDown(200);
     });
-    $("#liMenu").dblclick(function(){
+    $("#opMenu").dblclick(function(){
         $("#ulSubMenuMenu").slideUp(200);
     });
-    $("#liPerfil").click(function(){
+    $("#opPerfil").click(function(){
         $("#ulSubMenuPerfil").slideDown(200);
     });
-    $("#liPerfil").dblclick(function(){
+    $("#opPerfil").dblclick(function(){
         $("#ulSubMenuPerfil").slideUp(200);
     });
     
     $(".btnOpenMenu").click(function(){
         $(".divDadosPerfil").fadeIn(200);
-        $(".controleChamado").fadeOut(0);
     });
     $(".btnCloseMenu").click(function(){
-        $(".controleChamado").fadeIn(200);
+        $(".divDadosPerfil").fadeOut(200);
     });
+});
+$(window).resize(function(){
+	if ($(window).width() >= 900){	
+		$(".divDadosPerfil").fadeIn(0);
+	}	
 });

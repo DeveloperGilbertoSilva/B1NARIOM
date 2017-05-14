@@ -27,7 +27,7 @@
                     <div id="divLoginAdmin" class="display opSetor col-xs-8 col-xs-offset-2 col-lg-5 col-lg-offset-6">
                         <div id="setAdminLogin" class="position margin setClient ">
                             <i class="i position fa fa-cogs"></i><br/><br/>
-                            <form method="POST" action="#" enctype="multipart/form-data" id="formLoginAdmin" class="formLogin">
+                            <form method="POST" action="telaAdmin.jsp" enctype="multipart/form-data" id="formLoginAdmin" class="formLogin">
                                 <label id="labelMatAdmin" class="labelMat">Matrícula:</label><br/><input type="text" name="inputMat" id="inputMatAdmin" class="inputText">
                                 <br/><br/>
                                 <label id="labelPassAdmin" class="labelPass">Senha:</label><br/><input type="password" name="inputPass" id="inputPassAdmin" class="inputText">
