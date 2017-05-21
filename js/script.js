@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /*=======telaAdmin.jsp, telaAdmin_inserirCliente.jsp=======*/
+    /*=======Todas as telas Admin=======*/
     $("#opCliente, #opClienteClientInsert, #opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
        #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate,#opClientePerfilList,#opClienteUserInsert,\n\
        #opClienteUserUpdate,#opClienteUserList").click(function () {
@@ -65,18 +65,22 @@ $(document).ready(function () {
            #ulSubMenuPerfilUserUpdate,#ulSubMenuPerfilUserList").slideUp(200);
     });
 
-    /*=======telaTecnico.jsp=======*/
-    $("#opChamado").click(function () {
-        $("#ulSubMenuChamado").slideDown(200);
+    /*=======Todas as telas Tecnico=======*/
+    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList").click(function () {
+        $("#ulSubMenuChamado,#ulSubMenuChamadoEquipamentoInsert,#ulSubMenuChamadoEquipamentoUpdate,\n\
+           #ulSubMenuChamadoEquipamentoList").slideDown(200);
     });
-    $("#opChamado").dblclick(function () {
-        $("#ulSubMenuChamado").slideUp(200);
+    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList").dblclick(function () {
+        $("#ulSubMenuChamado,#ulSubMenuChamadoEquipamentoInsert,#ulSubMenuChamadoEquipamentoUpdate,\n\
+           #ulSubMenuChamadoEquipamentoList").slideUp(200);
     });
-    $("#opEquipamento").click(function () {
-        $("#ulSubMenuEquipamento").slideDown(200);
+    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList").click(function () {
+        $("#ulSubMenuEquipamento,#ulSubMenuEquipamentoEquipamentoInsert,#ulSubMenuEquipamentoEquipamentoUpdate,\n\
+           #ulSubMenuEquipamentoEquipamentoList").slideDown(200);
     });
-    $("#opEquipamento").dblclick(function () {
-        $("#ulSubMenuEquipamento").slideUp(200);
+    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList").dblclick(function () {
+        $("#ulSubMenuEquipamento,#ulSubMenuEquipamentoEquipamentoInsert,#ulSubMenuEquipamentoEquipamentoUpdate,\n\
+           #ulSubMenuEquipamentoEquipamentoList").slideUp(200);
     });
     /*==============*/
     

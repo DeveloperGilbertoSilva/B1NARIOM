@@ -61,8 +61,8 @@
                                             <h5 id="opEquipamento" class="op">Equipamento &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuEquipamento" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereEquipamento" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Equipamento</a></li>
-                                            <li id="liSubMenuListaEquipamento" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Equipamento</a></li>
+                                            <li id="liSubMenuInsereEquipamento" class="liSubMenu"><a href="telaTecnico_inserirEquipamento.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Equipamento</a></li>
+                                            <li id="liSubMenuListaEquipamento" class="liSubMenu"><a href="lista_equipamentos.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Equipamento</a></li>
                                         </ul>
                                     </li>
                                 </ul>
