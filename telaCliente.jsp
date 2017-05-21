@@ -25,7 +25,7 @@
                 <div id="divDadosPerfilCliente" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
-                            <div class="position imgLogo"></div>
+                            <a href="index.jsp"><div class="position imgLogo"></div></a>
                         </div>
                         <!--=======================DADOS PERFIL=======================-->
                         <i class="i fa fa-user-circle-o"></i>
@@ -68,13 +68,13 @@
                                 <textarea name="areaDescricao" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
                                 
                                 <label id="" class="labelChamado">Localidade:</label><br/>
-                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="inputChamado margin"><br/><br/>
+                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/>
                                 
                                 <label id="" class="labelChamado">Etiqueta do Equipamento:</label><br/>
-                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="inputChamado margin"><br/><br/>
+                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/>
                                 
                                 <label id="" class="labelChamado">Status:</label><br/>
-                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="inputChamado margin"><br/><br/><br/>
+                                <input type="text" name="inputLocalidade" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/><br/>
                                 
                                 <input type="submit" name="btnAbrirChamado" id="btnAbrirChamadoCliente" class="btnAbrirChamado margin" value="Abrir Chamado">
                             </form>

@@ -1,6 +1,10 @@
 *{margin: auto; padding: auto;}
+@font-face{
+    font-family: "Lato-Light";
+    src: url("../fonts/Lato-Light.ttf");
+}
 html,body{height: 100%;}
-.body{color: white;}
+.body{color: white; font-family: "Lato-Light";}
 /*======================Classes comuns a serem herdadas======================*/
 .container-fluid{min-height: 100%; background: #eb5e28;}
 .position{position: relative;}
@@ -20,7 +24,7 @@ html,body{height: 100%;}
 .divHeader{
     height: 90px;
     margin-top: 50px;}
-.divHeader h5{top: -15px;}
+.divHeader h5{top: -15px; font-family: "Lato-Light";}
 .logo{
     position: relative;
     width: 220px;
@@ -40,14 +44,17 @@ html,body{height: 100%;}
     text-decoration: none;
     color: white;}
 .setClient, .setAdmin{
-    width: 150px;
+    width: 250px;
     height: 100px;}
 .setAdmin{top: 20px;}
+#setAdminHome{width: 100px;}
 /*===========loginClient.jsp, loginB1nari0m.jsp===========*/
 #divLoginClient, #divLoginAdmin{border-top: none;}
 .formLogin{
+    width: 250px;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    font-family: "Lato-Light";}
 .inputText{
     padding: 5px 5px;
     border-color: transparent transparent white transparent;

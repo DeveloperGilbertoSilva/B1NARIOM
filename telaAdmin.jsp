@@ -25,7 +25,7 @@
                 <div id="divDadosPerfilAdmin" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
-                            <div class="position imgLogo"></div>
+                            <a href="index.jsp"><div class="position imgLogo"></div></a>
                         </div>
                         <!--=======================DADOS PERFIL=======================-->
                         <i class="i fa fa-user-circle-o"></i>
@@ -51,8 +51,8 @@
                                             <h5 id="opCliente" class="op">Cliente &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuCliente" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereCliente" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</a></li>
-                                            <li id="liSubMenuListaCliente" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Cliente</a></li>
+                                            <li id="liSubMenuInsereCliente" class="liSubMenu"><a href="telaAdmin_inserirCliente.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</a></li>
+                                            <li id="liSubMenuListaCliente" class="liSubMenu"><a href="lista_clientes.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Cliente</a></li>
                                         </ul>
                                     </li>
 
@@ -71,8 +71,8 @@
                                             <h5 id="opMenu" class="op">Menu &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuMenu" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereMenu" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Menu</a></li>
-                                            <li id="liSubMenuListaMenu" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Menu</a></li>
+                                            <li id="liSubMenuInsereMenu" class="liSubMenu"><a href="telaAdmin_inserirMenu.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Menu</a></li>
+                                            <li id="liSubMenuListaMenu" class="liSubMenu"><a href="lista_menus.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Menu</a></li>
                                         </ul>
                                     </li>
 
@@ -81,7 +81,7 @@
                                             <h5 id="opPerfil" class="op">Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuPerfil" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInserePerfil" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
+                                            <li id="liSubMenuInserePerfil" class="liSubMenu"><a href="telaAdmin_inserirPerfil.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
                                             <li id="liSubMenuListaPerfil" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
                                         </ul>
                                     </li>

@@ -25,7 +25,7 @@
                 <div id="divDadosPerfilTecnico" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
-                            <div class="position imgLogo"></div>
+                            <a href="index.jsp"><div class="position imgLogo"></div></a>
                         </div>
                         <!--=======================DADOS PERFIL=======================-->
                         <i class="i fa fa-user-circle-o"></i>
@@ -41,7 +41,7 @@
                             <nav id="navMenuTecnico" class="navMenu">
                                 <ul id="ulMenuTecnico" class="ulMenu" type="none">
                                     <li id="liVisaoGeralTecnico" class="liMenu">
-                                        <a href="#">
+                                        <a href="telaTecnico.jsp">
                                             <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
                                     </li>

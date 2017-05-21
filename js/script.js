@@ -1,27 +1,52 @@
 $(document).ready(function () {
-    $("#opCliente").click(function () {
-        $("#ulSubMenuCliente").slideDown(200);
+    /*=======telaAdmin.jsp, telaAdmin_inserirCliente.jsp=======*/
+    $("#opCliente, #opClienteClientInsert, #opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
+       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate").click(function () {
+        $("#ulSubMenuCliente,#ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
+           #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
+           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate").slideDown(200);
     });
-    $("#opCliente").dblclick(function () {
-        $("#ulSubMenuCliente").slideUp(200);
+    $("#opCliente, #opClienteClientInsert,#opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
+       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate").dblclick(function () {
+        $("#ulSubMenuCliente, #ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
+           #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
+           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate").slideUp(200);
     });
-    $("#opUsuario").click(function () {
-        $("#ulSubMenuUsuario").slideDown(200);
+    $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
+       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate").click(function () {
+        $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
+           #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
+           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate").slideDown(200);
     });
-    $("#opUsuario").dblclick(function () {
-        $("#ulSubMenuUsuario").slideUp(200);
+    $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
+       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate").dblclick(function () {
+        $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
+           #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
+           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate").slideUp(200);
     });
-    $("#opMenu").click(function () {
-        $("#ulSubMenuMenu").slideDown(200);
+    $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
+       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate").click(function () {
+        $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
+           #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
+           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate").slideDown(200);
     });
-    $("#opMenu").dblclick(function () {
-        $("#ulSubMenuMenu").slideUp(200);
+    $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
+       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate").dblclick(function () {
+        $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
+           #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
+           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate").slideUp(200);
     });
-    $("#opPerfil").click(function () {
-        $("#ulSubMenuPerfil").slideDown(200);
+    $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
+       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate").click(function () {
+        $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
+           #ulSubMenuPerfilClientList, #ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
+           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate").slideDown(200);
     });
-    $("#opPerfil").dblclick(function () {
-        $("#ulSubMenuPerfil").slideUp(200);
+    $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
+       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate").dblclick(function () {
+        $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
+           #ulSubMenuPerfilClientList,#ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
+           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate").slideUp(200);
     });
 
     /*=======telaTecnico.jsp=======*/
@@ -51,8 +76,14 @@ $(document).ready(function () {
     });
 });
 $(window).resize(function () {
-    if ($(window).width() >= 900) {
+    if ($(window).width() >= 992) {
         $(".divDadosPerfil").fadeIn(0);
+        $(".controleChamado").fadeIn(0);
+        $(".divFormAbrirChamado").fadeIn(0);
+    }
+    
+    if($(window).width() < 992){
+        $(".divDadosPerfil").fadeOut(0);
         $(".controleChamado").fadeIn(0);
         $(".divFormAbrirChamado").fadeIn(0);
     }

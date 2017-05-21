@@ -11,6 +11,12 @@ html,body{height: 100%;}
 .display{display: block;}
 .margin{margin-left: auto; margin-right: auto;}
 .i{font-size: 3.5em;}
+.input{
+    border: 1px solid;
+    border-color: transparent transparent orange transparent;
+    color: #403d39;
+    text-align: center;
+    outline: none;}
 /*============================================*/
 /*======================Dados do perfil======================*/
 .logo{display: none;}
@@ -82,16 +88,29 @@ html,body{height: 100%;}
     text-align: center;
     cursor: pointer;}
 .op i{float: right;}
-#liVisaoGeralAdmin, #liVisaoGeralTecnico{margin-bottom: 30px;}
-#liVisaoGeralAdmin h5,#liVisaoGeralTecnico h5, #liPesquisarChamado h5{
+#liVisaoGeralAdmin,#liVisaoGeralAdminClientInsert,#liVisaoGeralAdminClientUpdate,#liVisaoGeralAdminClientList,
+#liVisaoGeralAdminMenuInsert,#liVisaoGeralAdminMenuUpdate,#liVisaoGeralAdminMenuList,#liVisaoGeralAdminPerfilInsert,#liVisaoGeralAdminPerfilUpdate,
+#liVisaoGeralTecnico{margin-bottom: 30px;}
+
+#liVisaoGeralAdmin h5,#liVisaoGeralAdminClientInsert h5,#liVisaoGeralAdminClientUpdate h5,#liVisaoGeralAdminClientList h5,
+#liVisaoGeralAdminMenuInsert h5,#liVisaoGeralAdminMenuUpdate h5,#liVisaoGeralAdminMenuList h5,#liVisaoGeralAdminPerfilInsert h5,#liVisaoGeralAdminPerfilUpdate h5,
+#liVisaoGeralTecnico h5, #liPesquisarChamado h5{
     width: 150px;
     border: none;}
+
+/*----telaCliente----*/
 #liPesquisarChamado{
     margin-top: 20px;
     margin-bottom: 20px;}
 #liPesquisarChamado h5{width: 200px;}
-#liVisaoGeralAdmin i,#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
+/*--------*/
+
+#liVisaoGeralAdmin i,#liVisaoGeralAdminClientInsert i,#liVisaoGeralAdminClientUpdate i,#liVisaoGeralAdminClientList i,
+#liVisaoGeralAdminMenuInsert i,#liVisaoGeralAdminMenuUpdate i,#liVisaoGeralAdminMenuList i,#liVisaoGeralAdminPerfilInsert i,#liVisaoGeralAdminPerfilUpdate i,
+#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
+
 .ulSubMenu{
+    display: none;
     width: 200px;
     height: 50px;
     margin-bottom: 20px;}
@@ -101,7 +120,6 @@ html,body{height: 100%;}
     border-radius: 3px;
     background: grey;}
 .liSubMenu a{cursor: pointer;}
-#ulSubMenuCliente,#ulSubMenuUsuario,#ulSubMenuMenu,#ulSubMenuPerfil,#ulSubMenuChamado,#ulSubMenuEquipamento{display: none;}
 /*============================================*/
 
 /*======================CONTROLE CHAMADO======================*/
@@ -126,9 +144,10 @@ html,body{height: 100%;}
     font-size: 1.5em;}
 .headerSection h3{top: 70px; color: #252422; font-size: 1.5em;}
 .menuControleChamado{
-    height: 300px;
+    height: auto;
     margin-top: 15%;
-    margin-bottom: 5px;}
+    margin-bottom: 5px;
+    background: orange;}
 .ulControleChamado{
     list-style: none;
     padding: 0;
@@ -156,6 +175,55 @@ html,body{height: 100%;}
     font-size: 18px;
     font-family: "Lato-Light";
     text-align: left;}
+
+/*=========telaAdmin_inserirCliente,telaAdmin_alterarCliente, telaAdmin_inserirMenu, telaAdmin_inserirPerfil,telaAdmin_alterarPerfil=========*/
+#divFormClientInsert, #divFormClientUpdate, #divFormMenuInsert, #divFormMenuUpdate, #divFormPerfilInsert, #divFormPerfilUpdate{
+    height: 450px;
+    margin-bottom: 10px;
+    color: #403d39;}
+.formClient{
+    margin-top: 20px;
+    top: 30px;}
+.formClient input{
+    border-radius: 5px;}
+.formClient input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    background: #eb5e28;
+    font-size: 16px;
+    color: white;
+    outline: none;}
+.formClient select{
+    padding: 0px 5px;
+    border-radius: 5px;
+    outline: none;}
+/*==================*/
+
+/*=========lista_clientes, lista_menus=========*/
+#divTableClientList, #divTableMenuList{
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: white;
+    color: #403d39;
+    font-family: "Lato-Light";
+    overflow: auto;}
+.tableList{
+    height: auto;} 
+.tableList th{
+    height: 20px;
+    border-bottom: 1px solid #252422;
+    text-align: center;}
+.tableList td{
+    border: 1px solid #252422;
+    text-align: center;}
+.tableList a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #252422;}
+
+/*==================*/
+
 /*=========telaCliente=========*/
 .divFormAbrirChamado{
     width: 320px;
@@ -183,10 +251,7 @@ html,body{height: 100%;}
     outline: none;}
 .inputChamado{
     width: 200px;
-    border-color: transparent transparent orange transparent;
-    background: none;
-    text-align: center;
-    outline: none;}
+    background: none;}
 .btnAbrirChamado{
     border: none;
     border-radius: 5px;
@@ -197,7 +262,7 @@ html,body{height: 100%;}
 /*==================*/
 /*============================================*/
 /*======================TRATAMENTO DE RESOLUÇÕES======================*/
-@media screen and (min-width: 991px){
+@media screen and (min-width: 992px){
     .divDadosPerfil{display: block;}
      .logo{
         display: block;
@@ -211,6 +276,7 @@ html,body{height: 100%;}
          background-position: 50%;
          background-size: cover;}
     .btnCloseMenu, .btnOpenMenu{display: none;}
+    .controleChamado{background: white;}
     .menuControleChamado{margin-top: 150px;}
     .ulControleChamado{width: 750px;}
     .liControle{

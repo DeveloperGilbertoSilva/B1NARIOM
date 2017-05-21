@@ -28,7 +28,7 @@
                     <div id="divLoginClient" class="display opSetor col-xs-8 col-xs-offset-2 col-lg-5 col-lg-offset-6">
                         <div id="setClientLogin" class="position margin setClient ">
                             <i class="i position fa fa-user-circle-o"></i><br/><br/>
-                            <form method="POST" action="#" enctype="multipart/form-data" id="formLoginClient" class="formLogin">
+                            <form method="POST" action="telaCliente.jsp" enctype="multipart/form-data" id="formLoginClient" class="formLogin">
                                 <label id="labelMatClient" class="labelMat">Matrícula:</label><br/><input type="text" name="inputMat" id="inputMatClient" class="inputText">
                                 <br/><br/>
                                 <label id="labelPassClient" class="labelPass">Senha:</label><br/><input type="password" name="inputPass" id="inputPassClient" class="inputText">
