@@ -96,21 +96,23 @@ html,body{height: 100%;}
 #liVisaoGeralAdmin h5,#liVisaoGeralAdminClientInsert h5,#liVisaoGeralAdminClientUpdate h5,#liVisaoGeralAdminClientList h5,
 #liVisaoGeralAdminMenuInsert h5,#liVisaoGeralAdminMenuUpdate h5,#liVisaoGeralAdminMenuList h5,#liVisaoGeralAdminPerfilInsert h5,#liVisaoGeralAdminPerfilUpdate h5,
 #liVisaoGeralAdminPerfilList h5,#liVisaoGeralAdminUserInsert h5,#liVisaoGeralAdminUserUpdate h5,#liVisaoGeralAdminUserList h5,#liVisaoGeralTecnico h5,
-#liVisaoGeralTecnicoEquipamentoInsert h5,#liVisaoGeralTecnicoEquipamentoUpdate h5,#liVisaoGeralTecnicoEquipamentoList h5,#liPesquisarChamado h5{
+#liVisaoGeralTecnicoEquipamentoInsert h5,#liVisaoGeralTecnicoEquipamentoUpdate h5,#liVisaoGeralTecnicoEquipamentoList h5,#liPesquisarChamado h5,
+#liPesquisarChamadoChamadoSearch h5,#liPesquisarChamadoChamadoDetail h5{
     width: 150px;
     border: none;}
 
 /*----telaCliente----*/
-#liPesquisarChamado{
+#liPesquisarChamado, #liPesquisarChamadoChamadoSearch,#liPesquisarChamadoChamadoDetail{
     margin-top: 20px;
     margin-bottom: 20px;}
-#liPesquisarChamado h5{width: 200px;}
+#liPesquisarChamado h5, #liPesquisarChamadoChamadoSearch h5,#liPesquisarChamadoChamadoDetail h5{width: 200px;}
 /*--------*/
 
 #liVisaoGeralAdmin i,#liVisaoGeralAdminClientInsert i,#liVisaoGeralAdminClientUpdate i,#liVisaoGeralAdminClientList i,
 #liVisaoGeralAdminMenuInsert i,#liVisaoGeralAdminMenuUpdate i,#liVisaoGeralAdminMenuList i,#liVisaoGeralAdminPerfilInsert i,#liVisaoGeralAdminPerfilUpdate i,
 #liVisaoGeralAdminPerfilList i,#liVisaoGeralAdminUserInsert i,#liVisaoGeralAdminUserUpdate i,#liVisaoGeralAdminUserList i,#liVisaoGeralTecnico i,
-#liVisaoGeralTecnicoEquipamentoInsert i,#liVisaoGeralTecnicoEquipamentoUpdate i,#liVisaoGeralTecnicoEquipamentoList i,#liPesquisarChamado i{float: left;}
+#liVisaoGeralTecnicoEquipamentoInsert i,#liVisaoGeralTecnicoEquipamentoUpdate i,#liVisaoGeralTecnicoEquipamentoList i,#liPesquisarChamado i,
+#liPesquisarChamadoChamadoSearch i,#liPesquisarChamadoChamadoDetail i{float: left;}
 
 .ulSubMenu{
     display: none;
@@ -229,7 +231,7 @@ html,body{height: 100%;}
 
 /*==================*/
 
-/*=========telaCliente=========*/
+/*=========telaCliente, telaCliente_pesquisaChamado=========*/
 .divFormAbrirChamado{
     width: 320px;
     height: 330px;
@@ -247,6 +249,7 @@ html,body{height: 100%;}
     text-align: center;
     font-family: "Lato-Light";
     color: #252422;}
+#formPesquisarChamadoCliente{height: 150px; margin-top: 30px;}
 .labelChamado{
     font-size: 18px;}
 .formAbrirChamado textarea{

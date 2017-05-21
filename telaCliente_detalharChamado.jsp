@@ -20,9 +20,9 @@
 <body class="body">
     <div class="container-fluid">
         <div class="row">
-            <section id="sectionCliente" class="section">
+            <section id="sectionClienteChamadoDetail" class="section">
                 <!--=======================MENU PERFIL=======================-->
-                <div id="divDadosPerfilCliente" class="divDadosPerfil col-xs-12 col-md-3 ">
+                <div id="divDadosPerfilClienteChamadoDetail" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
                             <a href="index.jsp"><div class="position imgLogo"></div></a>
@@ -31,20 +31,19 @@
                         <i class="i fa fa-user-circle-o"></i>
                         <div class="btnCloseMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
                         <div class="dadosPerfil">
-                            <div id="nomeCliente" class="margin nome">Gilberto Lopes</div>
+                            <div id="nomeClienteChamadoDetail" class="margin nome">Gilberto Lopes</div>
                             <h4 class="titleMat">Matrícula:</h4>
-                            <div id="matriculaCliente" class="margin matricula">xxxxx-x</div>
+                            <div id="matriculaClienteChamadoDetail" class="margin matricula">xxxxx-x</div>
                             <h4 class="titleSetor">Setor:</h4>
-                            <div id="setorCliente" class="margin setor">TI</div>
+                            <div id="setorClienteChamadoDetail" class="margin setor">TI</div>
                             <h4 class="titleTelefone">Telefone:</h4>
-                            <div id="telefoneCliente" class="margin telefone">1234-5678</div>
-
+                            <div id="telefoneClienteChamadoDetail" class="margin telefone">1234-5678</div>
                         </div>
                         <!--==============================================-->
-                        <div id="divMenuPerfilCliente" class="divMenuPerfil">
-                            <nav id="navMenuCliente" class="navMenu">
-                                <ul id="ulMenuCliente" class="ulMenu" type="none">
-                                    <li id="liPesquisarChamado" class="liMenu">
+                        <div id="divMenuPerfilClienteChamadoDetail" class="divMenuPerfil">
+                            <nav id="navMenuClienteChamadoDetail" class="navMenu">
+                                <ul id="ulMenuClienteChamadoDetail" class="ulMenu" type="none">
+                                    <li id="liPesquisarChamadoChamadoDetail" class="liMenu">
                                         <a href="telaCliente_pesquisaChamado.jsp">
                                             <h5 class="op"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Pesquisar chamado</h5>
                                         </a>
@@ -56,13 +55,13 @@
                 </div>
                 <!--==============================================-->
                 <!--=======================CONTROLE DE CHAMADOS=======================-->
-                <div id="divAbrirChamadoCliente" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
+                <div id="divAbrirChamadoClienteChamadoDetail" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
-                        <div id="headerSectionCliente" class="position headerSection">
+                        <div id="headerSectionClienteChamadoDetail" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</h3>
+                            <h3 class="position"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Detalhe do Chamado</h3>
                         </div>
-                        <div id="divFormAbrirChamadoCliente" class="divFormAbrirChamado">
+                        <div id="divFormAbrirChamadoClienteChamadoDetail" class="divFormAbrirChamado">
                             <form method="POST" action="#" id="formAbrirChamadoCliente" class="formAbrirChamado">
                                 <label id="" class="labelChamado">Descrição: </label>
                                 <textarea name="areaDescricao" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
