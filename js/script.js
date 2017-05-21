@@ -66,21 +66,25 @@ $(document).ready(function () {
     });
 
     /*=======Todas as telas Tecnico=======*/
-    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList").click(function () {
+    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList, #opChamadoChamadoOpen,#opChamadoChamadoDetail,\n\
+       #opChamadoChamadoSearch").click(function () {
         $("#ulSubMenuChamado,#ulSubMenuChamadoEquipamentoInsert,#ulSubMenuChamadoEquipamentoUpdate,\n\
-           #ulSubMenuChamadoEquipamentoList").slideDown(200);
+           #ulSubMenuChamadoEquipamentoList,#ulSubMenuChamadoChamadoOpen,#ulSubMenuChamadoChamadoDetail,#ulSubMenuChamadoChamadoSearch").slideDown(200);
     });
-    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList").dblclick(function () {
+    $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList,#opChamadoChamadoOpen,#opChamadoChamadoDetail,\n\
+       #opChamadoChamadoSearch").dblclick(function () {
         $("#ulSubMenuChamado,#ulSubMenuChamadoEquipamentoInsert,#ulSubMenuChamadoEquipamentoUpdate,\n\
-           #ulSubMenuChamadoEquipamentoList").slideUp(200);
+           #ulSubMenuChamadoEquipamentoList,#ulSubMenuChamadoChamadoOpen,#ulSubMenuChamadoChamadoDetail,#ulSubMenuChamadoChamadoSearch").slideUp(200);
     });
-    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList").click(function () {
+    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList,#opEquipamentoChamadoOpen,#opEquipamentoChamadoDetail,\n\
+       #opEquipamentoChamadoSearch").click(function () {
         $("#ulSubMenuEquipamento,#ulSubMenuEquipamentoEquipamentoInsert,#ulSubMenuEquipamentoEquipamentoUpdate,\n\
-           #ulSubMenuEquipamentoEquipamentoList").slideDown(200);
+           #ulSubMenuEquipamentoEquipamentoList,#ulSubMenuEquipamentoChamadoOpen,#ulSubMenuEquipamentoChamadoDetail,#ulSubMenuEquipamentoChamadoSearch").slideDown(200);
     });
-    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList").dblclick(function () {
+    $("#opEquipamento,#opEquipamentoEquipamentoInsert,#opEquipamentoEquipamentoUpdate,#opEquipamentoEquipamentoList,#opEquipamentoChamadoOpen,#opEquipamentoChamadoDetail,\n\
+       #opEquipamentoChamadoSearch").dblclick(function () {
         $("#ulSubMenuEquipamento,#ulSubMenuEquipamentoEquipamentoInsert,#ulSubMenuEquipamentoEquipamentoUpdate,\n\
-           #ulSubMenuEquipamentoEquipamentoList").slideUp(200);
+           #ulSubMenuEquipamentoEquipamentoList,#ulSubMenuEquipamentoChamadoOpen,#ulSubMenuEquipamentoChamadoDetail,#ulSubMenuEquipamentoChamadoSearch").slideUp(200);
     });
     /*==============*/
     

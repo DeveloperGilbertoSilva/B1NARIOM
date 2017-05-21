@@ -43,7 +43,7 @@
                         <div id="divMenuPerfilClienteChamadoSearch" class="divMenuPerfil">
                             <nav id="navMenuClienteChamadoSearch" class="navMenu">
                                 <ul id="ulMenuClienteChamadoSearch" class="ulMenu" type="none">
-                                    <li id="liPesquisarChamadoChamadoSearch" class="liMenu">
+                                    <li id="liAbrirChamadoClienteChamadoSearch" class="liMenu">
                                         <a href="telaCliente.jsp">
                                             <h5 class="op"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;Abrir chamado</h5>
                                         </a>
@@ -64,7 +64,7 @@
                         <div id="divFormPesquisarChamadoClienteChamadoSearch" class="divFormAbrirChamado">
                             <form method="POST" action="#" id="formPesquisarChamadoCliente" class="formAbrirChamado">
                                 <label id="" class="labelChamadoChamadoSearch">Digite o número do chamado:</label><br/>
-                                <input type="text" name="inputChamado" maxlength="20" id="inputChamadoCliente" class="input inputChamado margin"><br/><br/><br/>
+                                <input type="text" name="numeroChamado" maxlength="20" id="inputChamadoCliente" class="input inputChamado margin"><br/><br/><br/>
                                 <input type="submit" name="btnAbrirChamado" id="btnPesquisarChamadoCliente" class="btnAbrirChamado margin" value="Pesquisar Chamado">
                             </form>
                         </div>

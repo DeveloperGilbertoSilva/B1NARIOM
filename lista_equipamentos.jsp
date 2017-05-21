@@ -51,8 +51,8 @@
                                             <h5 id="opChamadoEquipamentoList" class="op">Chamado &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuChamadoEquipamentoList" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuAbrirChamadoEquipamentoList" class="liSubMenu"><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</a></li>
-                                            <li id="liSubMenuPesquisarEquipamentoList" class="liSubMenu"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Pesquisar Chamado</a></li>
+                                            <li id="liSubMenuAbrirChamadoEquipamentoList" class="liSubMenu"><a href="telaTecnico_abrirChamado.jsp"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</a></li>
+                                            <li id="liSubMenuPesquisarEquipamentoList" class="liSubMenu"><a href="telaTecnico_pesquisarChamado.jsp"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Pesquisar Chamado</a></li>
                                         </ul>
                                     </li>
 
