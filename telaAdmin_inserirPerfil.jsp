@@ -81,7 +81,7 @@
                                             <h5 id="opPerfilPerfilInsert" class="op">Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuPerfilPerfilInsert" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuListaPerfilPerfilInsert" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
+                                            <li id="liSubMenuListaPerfilPerfilInsert" class="liSubMenu"><a href="lista_perfis.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
                                         </ul>
                                     </li>
                                 </ul>

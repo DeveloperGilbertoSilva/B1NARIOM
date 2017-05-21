@@ -81,7 +81,7 @@
                                         </a>
                                         <ul id="ulSubMenuPerfilClientList" class="margin ulSubMenu" type="none">
                                             <li id="liSubMenuInserePerfilClientList" class="liSubMenu"><a href="telaAdmin_inserirPerfil.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
-                                            <li id="liSubMenuListaPerfilClientList" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
+                                            <li id="liSubMenuListaPerfilClientList" class="liSubMenu"><a href="lista_perfis.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
                                         </ul>
                                     </li>
                                 </ul>

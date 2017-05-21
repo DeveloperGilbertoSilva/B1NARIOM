@@ -90,11 +90,11 @@ html,body{height: 100%;}
 .op i{float: right;}
 #liVisaoGeralAdmin,#liVisaoGeralAdminClientInsert,#liVisaoGeralAdminClientUpdate,#liVisaoGeralAdminClientList,
 #liVisaoGeralAdminMenuInsert,#liVisaoGeralAdminMenuUpdate,#liVisaoGeralAdminMenuList,#liVisaoGeralAdminPerfilInsert,#liVisaoGeralAdminPerfilUpdate,
-#liVisaoGeralTecnico{margin-bottom: 30px;}
+#liVisaoGeralAdminPerfilList,#liVisaoGeralTecnico{margin-bottom: 30px;}
 
 #liVisaoGeralAdmin h5,#liVisaoGeralAdminClientInsert h5,#liVisaoGeralAdminClientUpdate h5,#liVisaoGeralAdminClientList h5,
 #liVisaoGeralAdminMenuInsert h5,#liVisaoGeralAdminMenuUpdate h5,#liVisaoGeralAdminMenuList h5,#liVisaoGeralAdminPerfilInsert h5,#liVisaoGeralAdminPerfilUpdate h5,
-#liVisaoGeralTecnico h5, #liPesquisarChamado h5{
+#liVisaoGeralAdminPerfilList h5, #liVisaoGeralTecnico h5, #liPesquisarChamado h5{
     width: 150px;
     border: none;}
 
@@ -107,7 +107,7 @@ html,body{height: 100%;}
 
 #liVisaoGeralAdmin i,#liVisaoGeralAdminClientInsert i,#liVisaoGeralAdminClientUpdate i,#liVisaoGeralAdminClientList i,
 #liVisaoGeralAdminMenuInsert i,#liVisaoGeralAdminMenuUpdate i,#liVisaoGeralAdminMenuList i,#liVisaoGeralAdminPerfilInsert i,#liVisaoGeralAdminPerfilUpdate i,
-#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
+#liVisaoGeralAdminPerfilList i,#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
 
 .ulSubMenu{
     display: none;
@@ -199,8 +199,8 @@ html,body{height: 100%;}
     outline: none;}
 /*==================*/
 
-/*=========lista_clientes, lista_menus=========*/
-#divTableClientList, #divTableMenuList{
+/*=========lista_clientes, lista_menus, lista_perfis=========*/
+#divTableClientList, #divTableMenuList, #divTablePerfilList{
     height: 400px;
     margin-top: 10px;
     margin-bottom: 20px;

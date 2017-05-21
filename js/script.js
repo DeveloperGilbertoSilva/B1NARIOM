@@ -1,52 +1,52 @@
 $(document).ready(function () {
     /*=======telaAdmin.jsp, telaAdmin_inserirCliente.jsp=======*/
     $("#opCliente, #opClienteClientInsert, #opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
-       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate").click(function () {
+       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate,#opClientePerfilList").click(function () {
         $("#ulSubMenuCliente,#ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
            #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
-           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate").slideDown(200);
+           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate,#ulSubMenuClientePerfilList").slideDown(200);
     });
     $("#opCliente, #opClienteClientInsert,#opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
-       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate").dblclick(function () {
+       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate,#opClientePerfilList").dblclick(function () {
         $("#ulSubMenuCliente, #ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
            #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
-           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate").slideUp(200);
+           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate,#ulSubMenuClientePerfilList").slideUp(200);
     });
     $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
-       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate").click(function () {
+       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate,#opUsuarioPerfilList").click(function () {
         $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
            #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
-           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate").slideDown(200);
+           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate,#ulSubMenuUsuarioPerfilList").slideDown(200);
     });
     $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
-       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate").dblclick(function () {
+       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate,#opUsuarioPerfilList").dblclick(function () {
         $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
            #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
-           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate").slideUp(200);
+           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate,#ulSubMenuUsuarioPerfilList").slideUp(200);
     });
     $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
-       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate").click(function () {
+       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate,#opMenuPerfilList").click(function () {
         $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
            #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
-           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate").slideDown(200);
+           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate,#ulSubMenuMenuPerfilList").slideDown(200);
     });
     $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
-       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate").dblclick(function () {
+       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate,#opMenuPerfilList").dblclick(function () {
         $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
            #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
-           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate").slideUp(200);
+           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate,#ulSubMenuMenuPerfilList").slideUp(200);
     });
     $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
-       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate").click(function () {
+       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate,#opPerfilPerfilList").click(function () {
         $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
            #ulSubMenuPerfilClientList, #ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
-           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate").slideDown(200);
+           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate, #ulSubMenuPerfilPerfilList").slideDown(200);
     });
     $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
-       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate").dblclick(function () {
+       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate,#opPerfilPerfilList").dblclick(function () {
         $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
            #ulSubMenuPerfilClientList,#ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
-           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate").slideUp(200);
+           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate,#ulSubMenuPerfilPerfilList").slideUp(200);
     });
 
     /*=======telaTecnico.jsp=======*/
