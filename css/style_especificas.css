@@ -90,11 +90,11 @@ html,body{height: 100%;}
 .op i{float: right;}
 #liVisaoGeralAdmin,#liVisaoGeralAdminClientInsert,#liVisaoGeralAdminClientUpdate,#liVisaoGeralAdminClientList,
 #liVisaoGeralAdminMenuInsert,#liVisaoGeralAdminMenuUpdate,#liVisaoGeralAdminMenuList,#liVisaoGeralAdminPerfilInsert,#liVisaoGeralAdminPerfilUpdate,
-#liVisaoGeralAdminPerfilList,#liVisaoGeralTecnico{margin-bottom: 30px;}
+#liVisaoGeralAdminPerfilList,#liVisaoGeralAdminUserInsert,#liVisaoGeralAdminUserUpdate,#liVisaoGeralAdminUserList,#liVisaoGeralTecnico{margin-bottom: 30px;}
 
 #liVisaoGeralAdmin h5,#liVisaoGeralAdminClientInsert h5,#liVisaoGeralAdminClientUpdate h5,#liVisaoGeralAdminClientList h5,
 #liVisaoGeralAdminMenuInsert h5,#liVisaoGeralAdminMenuUpdate h5,#liVisaoGeralAdminMenuList h5,#liVisaoGeralAdminPerfilInsert h5,#liVisaoGeralAdminPerfilUpdate h5,
-#liVisaoGeralAdminPerfilList h5, #liVisaoGeralTecnico h5, #liPesquisarChamado h5{
+#liVisaoGeralAdminPerfilList h5,#liVisaoGeralAdminUserInsert h5,#liVisaoGeralAdminUserUpdate h5,#liVisaoGeralAdminUserList h5,#liVisaoGeralTecnico h5, #liPesquisarChamado h5{
     width: 150px;
     border: none;}
 
@@ -107,7 +107,7 @@ html,body{height: 100%;}
 
 #liVisaoGeralAdmin i,#liVisaoGeralAdminClientInsert i,#liVisaoGeralAdminClientUpdate i,#liVisaoGeralAdminClientList i,
 #liVisaoGeralAdminMenuInsert i,#liVisaoGeralAdminMenuUpdate i,#liVisaoGeralAdminMenuList i,#liVisaoGeralAdminPerfilInsert i,#liVisaoGeralAdminPerfilUpdate i,
-#liVisaoGeralAdminPerfilList i,#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
+#liVisaoGeralAdminPerfilList i,#liVisaoGeralAdminUserInsert i,#liVisaoGeralAdminUserUpdate i,#liVisaoGeralAdminUserList i,#liVisaoGeralTecnico i,#liPesquisarChamado i{float: left;}
 
 .ulSubMenu{
     display: none;
@@ -176,8 +176,8 @@ html,body{height: 100%;}
     font-family: "Lato-Light";
     text-align: left;}
 
-/*=========telaAdmin_inserirCliente,telaAdmin_alterarCliente, telaAdmin_inserirMenu, telaAdmin_inserirPerfil,telaAdmin_alterarPerfil=========*/
-#divFormClientInsert, #divFormClientUpdate, #divFormMenuInsert, #divFormMenuUpdate, #divFormPerfilInsert, #divFormPerfilUpdate{
+/*=========telaAdmin_inserirCliente,telaAdmin_alterarCliente, telaAdmin_inserirMenu, telaAdmin_inserirPerfil,telaAdmin_alterarPerfil, telaAdmin_inserirUsuario=========*/
+#divFormClientInsert, #divFormClientUpdate, #divFormMenuInsert, #divFormMenuUpdate, #divFormPerfilInsert, #divFormPerfilUpdate, #divFormUserInsert, #divFormUserUpdate{
     height: 450px;
     margin-bottom: 10px;
     color: #403d39;}
@@ -199,8 +199,8 @@ html,body{height: 100%;}
     outline: none;}
 /*==================*/
 
-/*=========lista_clientes, lista_menus, lista_perfis=========*/
-#divTableClientList, #divTableMenuList, #divTablePerfilList{
+/*=========lista_clientes, lista_menus, lista_perfis, lista_usuarios=========*/
+#divTableClientList, #divTableMenuList, #divTablePerfilList, #divTableUserList{
     height: 400px;
     margin-top: 10px;
     margin-bottom: 20px;

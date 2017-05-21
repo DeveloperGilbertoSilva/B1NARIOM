@@ -61,8 +61,8 @@
                                             <h5 id="opUsuarioMenuUpdate" class="op">Usuário &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
                                         <ul id="ulSubMenuUsuarioMenuUpdate" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereUsuarioMenuUpdate" class="liSubMenu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Usuário</a></li>
-                                            <li id="liSubMenuListaUsuarioMenuUpdate" class="liSubMenu"><a href="#"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Usuário</a></li>
+                                            <li id="liSubMenuInsereUsuarioMenuUpdate" class="liSubMenu"><a href="telaAdmin_inserirUsuario.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Usuário</a></li>
+                                            <li id="liSubMenuListaUsuarioMenuUpdate" class="liSubMenu"><a href="lista_usuarios.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Usuário</a></li>
                                         </ul>
                                     </li>
 

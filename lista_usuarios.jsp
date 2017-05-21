@@ -20,9 +20,9 @@
 <body class="body">
     <div class="container-fluid">
         <div class="row">
-            <section id="sectionAdminMenuList" class="section">
+            <section id="sectionAdminUserList" class="section">
                 <!--=======================MENU PERFIL=======================-->
-                <div id="divDadosPerfilAdminMenuList" class="divDadosPerfil col-xs-12 col-md-3 ">
+                <div id="divDadosPerfilAdminUserList" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
                             <a href="index.jsp"><div class="position imgLogo"></div></a>
@@ -31,57 +31,57 @@
                         <i class="i fa fa-user-circle-o"></i>
                         <div class="btnCloseMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
                         <div class="dadosPerfil">
-                            <div id="nomeAdminMenuList" class="margin nome">Gilberto Lopes</div>
+                            <div id="nomeAdminUserList" class="margin nome">Gilberto Lopes</div>
                             <h4 class="titleMat">Matrícula:</h4>
-                            <div id="matriculaAdminMenuList" class="margin matricula">xxxxx-x</div>
-                            <h5 id="titleSetorAdminMenuList" class="titleSetor">Área Administrativa</h5>
+                            <div id="matriculaAdminUserList" class="margin matricula">xxxxx-x</div>
+                            <h5 id="titleSetorAdminUserList" class="titleSetor">Área Administrativa</h5>
                         </div>
                         <!--==============================================-->
-                        <div id="divMenuPerfilAdminMenuList" class="divMenuPerfil">
-                            <nav id="navMenuAdminMenuList" class="navMenu">
-                                <ul id="ulMenuAdminMenuList" class="ulMenu" type="none">
-                                    <li id="liVisaoGeralAdminMenuList" class="liMenu">
+                        <div id="divMenuPerfilAdminUserList" class="divMenuPerfil">
+                            <nav id="navMenuAdminUserList" class="navMenu">
+                                <ul id="ulMenuAdminUserList" class="ulMenu" type="none">
+                                    <li id="liVisaoGeralAdminUserList" class="liMenu">
                                         <a href="telaAdmin.jsp">
                                             <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
                                     </li>
 
-                                    <li id="liClienteMenuList" class="liMenu">
+                                    <li id="liClienteUserList" class="liMenu">
                                         <a href="#">
-                                            <h5 id="opClienteMenuList" class="op">Cliente &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 id="opClienteUserList" class="op">Cliente &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
-                                        <ul id="ulSubMenuClienteMenuList" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereClienteMenuList" class="liSubMenu"><a href="telaAdmin_inserirCliente.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</a></li>
-                                            <li id="liSubMenuListaClienteMenuList" class="liSubMenu"><a href="lista_clientes.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Listar Cliente</a></li>
+                                        <ul id="ulSubMenuClienteUserList" class="margin ulSubMenu" type="none">
+                                            <li id="liSubMenuInsereClienteUserList" class="liSubMenu"><a href="telaAdmin_inserirCliente.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</a></li>
+                                            <li id="liSubMenuListaClienteUserList" class="liSubMenu"><a href="lista_clientes.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Listar Cliente</a></li>
                                         </ul>
                                     </li>
 
-                                    <li id="liUsuarioMenuList" class="liMenu">
+                                    <li id="liUsuarioUserList" class="liMenu">
                                         <a href="#">
-                                            <h5 id="opUsuarioMenuList" class="op">Usuário &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 id="opUsuarioUserList" class="op">Usuário &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
-                                        <ul id="ulSubMenuUsuarioMenuList" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereUsuarioMenuList" class="liSubMenu"><a href="telaAdmin_inserirUsuario.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Usuário</a></li>
-                                            <li id="liSubMenuListaUsuarioMenuList" class="liSubMenu"><a href="lista_usuarios.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Usuário</a></li>
+                                        <ul id="ulSubMenuUsuarioUserList" class="margin ulSubMenu" type="none">
+                                            <li id="liSubMenuInsereUsuarioUserList" class="liSubMenu"><a href="telaAdmin_inserirUsuario.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Usuário</a></li>
                                         </ul>
                                     </li>
 
-                                    <li id="liMenuMenuList" class="liMenu">
+                                    <li id="liMenuUserList" class="liMenu">
                                         <a href="#">
-                                            <h5 id="opMenuMenuList" class="op">Menu &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 id="opMenuUserList" class="op">Menu &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
-                                        <ul id="ulSubMenuMenuMenuList" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereMenuMenuList" class="liSubMenu"><a href="telaAdmin_inserirMenu.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Menu</a></li>
+                                        <ul id="ulSubMenuMenuUserList" class="margin ulSubMenu" type="none">
+                                            <li id="liSubMenuInsereMenuUserList" class="liSubMenu"><a href="telaAdmin_inserirMenu.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Menu</a></li>
+                                            <li id="liSubMenuInsereMenuUserList" class="liSubMenu"><a href="lista_menus.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Lista Menu</a></li>
                                         </ul>
                                     </li>
 
-                                    <li id="liPerfilMenuList" class="liMenu">
+                                    <li id="liPerfilUserList" class="liMenu">
                                         <a href="#">
-                                            <h5 id="opPerfilMenuList" class="op">Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 id="opPerfilUserList" class="op">Perfil &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
                                         </a>
-                                        <ul id="ulSubMenuPerfilMenuList" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInserePerfilMenuList" class="liSubMenu"><a href="telaAdmin_inserirPerfil.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
-                                            <li id="liSubMenuListaPerfilMenuList" class="liSubMenu"><a href="lista_perfis.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
+                                        <ul id="ulSubMenuPerfilUserList" class="margin ulSubMenu" type="none">
+                                            <li id="liSubMenuInserePerfilUserList" class="liSubMenu"><a href="telaAdmin_inserirPerfil.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Perfil</a></li>
+                                            <li id="liSubMenuListaPerfilUserList" class="liSubMenu"><a href="lista_perfis.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Perfil</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -91,24 +91,22 @@
                 </div>
                 <!--==============================================-->
                 <!--=======================CONTROLE DE CHAMADOS=======================-->
-                <div id="divAdminMenuList" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
+                <div id="divAdminUserList" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
-                        <div id="headerSectionAdminMenuList" class="position headerSection">
+                        <div id="headerSectionAdminUserList" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Menus</h3>
+                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Usuarios</h3>
                         </div>
-                        <div id="divTableMenuList" class="col-xs-10 col-xs-offset-1">
+                        <div id="divTableUserList" class="col-xs-10 col-xs-offset-1">
                             <center>
                                 <table class="tableList table table-responsive">
                                     <tr>
-                                        <th>Id</th>
+                                        <th>Matrícula</th>
                                         <th>Nome</th>
-                                        <th>Link</th>
                                         <th>Perfil</th>
                                         <th>Opções</th>
                                     </tr>
                                     <tr>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
