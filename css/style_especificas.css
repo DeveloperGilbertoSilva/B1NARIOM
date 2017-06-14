@@ -5,7 +5,7 @@
 }
 html,body{height: 100%;}
 .body{color: white;}
-/*======================Classes comuns a serem herdadas======================*/
+/*======================PATTERN======================*/
 .container-fluid{min-height: 100%; background: white;}
 .position{position: relative;}
 .display{display: block;}
@@ -17,8 +17,6 @@ html,body{height: 100%;}
     color: #403d39;
     text-align: center;
     outline: none;}
-/*============================================*/
-/*======================Dados do perfil======================*/
 .logo{display: none;}
 .divDadosPerfil{
     display: none;
@@ -28,7 +26,7 @@ html,body{height: 100%;}
     text-align: center;
     font-family: "Lato-Light";
     z-index: 1;}
-.divDadosPerfil .fa-user-circle-o{margin-top: 50px;}
+.divDadosPerfil .fa-user-circle-o{position: relative; margin-top: 10px; top: 5px;}
 .btnCloseMenu,.btnOpenMenu{
     position: absolute;
     width: 30px;
@@ -54,54 +52,92 @@ html,body{height: 100%;}
     margin-top: 0px;
     text-align: center;
     font-size: 18px;}
-.matricula{margin-top: -10px;}
+.matricula{margin-top: -20px;}
 .titleMat,.titleSetor,.titleTelefone{
     width: 100px;
     padding: 3px;
     border-radius: 3px;
     background: #666;}
-
-/*============================================*/
-
-/*======================MENU PERFIL======================*/
 .divMenuPerfil{
     height: auto;
     margin-top: 5px;
     margin-bottom: 10px;}
-.ulMenu, .ulSubMenu{
-    padding: 0;
-    list-style: none;}
-.liMenu{
-    max-width: 220px;
-    height: auto;
-    margin: 10px auto 10px auto;}
-.liMenu a{
-    text-decoration: none;
-    color: white;
-    cursor: default;}
-.op{
-    width: 150px;
-    padding: 3px 10px;
-    border-radius: 3px;
-    border: 1px solid #999;
-    font-size: 18px;
-    text-align: center;
-    cursor: pointer;}
-.op i{float: right;}
-#liVisaoGeralAdmin,#liVisaoGeralAdminClientInsert,#liVisaoGeralAdminClientUpdate,#liVisaoGeralAdminClientList,
-#liVisaoGeralAdminMenuInsert,#liVisaoGeralAdminMenuUpdate,#liVisaoGeralAdminMenuList,#liVisaoGeralAdminPerfilInsert,#liVisaoGeralAdminPerfilUpdate,
-#liVisaoGeralAdminPerfilList,#liVisaoGeralAdminUserInsert,#liVisaoGeralAdminUserUpdate,#liVisaoGeralAdminUserList,#liVisaoGeralTecnico,
-#liVisaoGeralTecnicoEquipamentoInsert,#liVisaoGeralTecnicoEquipamentoUpdate,#liVisaoGeralTecnicoEquipamentoList,#liVisaoGeralTecnicoChamadoOpen,
-#liVisaoGeralTecnicoChamadoDetail,#liVisaoGeralTecnicoChamadoSearch{margin-bottom: 30px;}
+/*============================================*/
 
-#liVisaoGeralAdmin h5,#liVisaoGeralAdminClientInsert h5,#liVisaoGeralAdminClientUpdate h5,#liVisaoGeralAdminClientList h5,
-#liVisaoGeralAdminMenuInsert h5,#liVisaoGeralAdminMenuUpdate h5,#liVisaoGeralAdminMenuList h5,#liVisaoGeralAdminPerfilInsert h5,#liVisaoGeralAdminPerfilUpdate h5,
-#liVisaoGeralAdminPerfilList h5,#liVisaoGeralAdminUserInsert h5,#liVisaoGeralAdminUserUpdate h5,#liVisaoGeralAdminUserList h5,#liVisaoGeralTecnico h5,
-#liVisaoGeralTecnicoEquipamentoInsert h5,#liVisaoGeralTecnicoEquipamentoUpdate h5,#liVisaoGeralTecnicoEquipamentoList h5,#liPesquisarChamadoCliente h5,
-#liAbrirChamadoClienteChamadoSearch h5,#liPesquisarChamadoClienteChamadoDetail h5,#liVisaoGeralTecnicoChamadoOpen h5,#liVisaoGeralTecnicoChamadoDetail h5,
-#liVisaoGeralTecnicoChamadoSearch h5{
+/*======================MENU PERFIL (Telas Admin e Telas Tecnico)======================*/
+.ulMenu{
+    width: 200px;    
+    padding: 2px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background: #333;
+    color: white;}
+.ulMenu a{
+    text-decoration: none;
+    color: white;}
+.liVisaoGeral{
+    display: block;
+    position: relative;
     width: 150px;
-    border: none;}
+    height: auto;
+    padding: 0px;
+    margin-top: 17px;
+    border-radius: 2px;
+    background: #252422;
+    transition: 0.3s;}
+.liVisaoGeralAdmin{margin-bottom: 15px;}
+.liVisaoGeral:hover{background: grey;}
+
+.op{
+    display: block;
+    font-size: 1.2em;}
+.iMenu{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    padding: 4px 0px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background: orange;
+    float: left;
+    left: -10px;
+    top: -3px;
+    font-size: 0.9em;}
+.fa-caret-down{
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    position: relative; 
+    float: right;
+    right: 3px;
+    top: 2px;
+    background: green;
+    transition: 0.3s;}
+.fa-caret-down:hover{background: #255625;}
+.ulSubMenu{
+    display: none;
+    position: absolute;
+    width: 175px;
+    height: auto;
+    padding: 0px;
+    float: right;
+    right: -165px;
+    top: -5px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;}
+.liSubMenu{
+    display: block;
+    position: relative;
+    width: 155px;
+    left: 10px;
+    margin-top: 3px;
+    top: -3px;
+    background: #eb5e28;
+    border-radius: 5px;
+    transition: 0.4s;}
+.liSubMenu:hover {background: #252422;}
+
 
 /*----telaCliente----*/
 #liPesquisarChamadoCliente, #liAbrirChamadoClienteChamadoSearch,#liPesquisarChamadoClienteChamadoDetail{
@@ -110,24 +146,7 @@ html,body{height: 100%;}
 #liPesquisarChamadoCliente h5, #liAbrirChamadoClienteChamadoSearch h5,#liPesquisarChamadoClienteChamadoDetail h5{width: 200px;}
 /*--------*/
 
-#liVisaoGeralAdmin i,#liVisaoGeralAdminClientInsert i,#liVisaoGeralAdminClientUpdate i,#liVisaoGeralAdminClientList i,
-#liVisaoGeralAdminMenuInsert i,#liVisaoGeralAdminMenuUpdate i,#liVisaoGeralAdminMenuList i,#liVisaoGeralAdminPerfilInsert i,#liVisaoGeralAdminPerfilUpdate i,
-#liVisaoGeralAdminPerfilList i,#liVisaoGeralAdminUserInsert i,#liVisaoGeralAdminUserUpdate i,#liVisaoGeralAdminUserList i,#liVisaoGeralTecnico i,
-#liVisaoGeralTecnicoEquipamentoInsert i,#liVisaoGeralTecnicoEquipamentoUpdate i,#liVisaoGeralTecnicoEquipamentoList i,#liPesquisarChamadoCliente i,
-#liAbrirChamadoClienteChamadoSearch i,#liPesquisarChamadoClienteChamadoDetail i,#liVisaoGeralTecnicoChamadoOpen i, #liVisaoGeralTecnicoChamadoDetail i,
-#liVisaoGeralTecnicoChamadoSearch i{float: left;}
 
-.ulSubMenu{
-    display: none;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 20px;}
-.liSubMenu{
-    width: 150px;
-    margin: 0px auto 10px auto;
-    border-radius: 3px;
-    background: grey;}
-.liSubMenu a{cursor: pointer;}
 /*============================================*/
 
 /*======================CONTROLE CHAMADO======================*/
@@ -185,8 +204,7 @@ html,body{height: 100%;}
 
 /*=========telaAdmin_inserirCliente,telaAdmin_alterarCliente, telaAdmin_inserirMenu, telaAdmin_inserirPerfil,telaAdmin_alterarPerfil, telaAdmin_inserirUsuario,
            telaTecnico_inserirEquipamento=========*/
-#divFormClientInsert, #divFormClientUpdate, #divFormMenuInsert, #divFormMenuUpdate, #divFormPerfilInsert, #divFormPerfilUpdate, #divFormUserInsert, #divFormUserUpdate,
-#divFormEquipamentoInsert, #divFormEquipamentoUpdate{
+.divForm{
     height: 450px;
     margin-bottom: 10px;
     color: #403d39;}
@@ -274,17 +292,17 @@ html,body{height: 100%;}
 /*======================TRATAMENTO DE RESOLUÇÕES======================*/
 @media screen and (min-width: 992px){
     .divDadosPerfil{display: block;}
-     .logo{
+    .logo{
         display: block;
-        height: 60px;
+        height: 50px;
         background: #eb5e28;}
-     .imgLogo{
-         width: 200px;
-         height: 50px;
-         top: 10px;
-         background: url("../img/logo_small.png");
-         background-position: 50%;
-         background-size: cover;}
+    .imgLogo{
+        width: 200px;
+        height: 40px;
+        top: 10px;
+        background: url("../img/logo_small.png");
+        background-position: 50%;
+        background-size: cover;}
     .btnCloseMenu, .btnOpenMenu{display: none;}
 
     .menuControleChamado{margin-top: 150px;}
@@ -294,10 +312,10 @@ html,body{height: 100%;}
         width: 160px;
         margin-left: 20px;
         font-size: 16px;}
-/*=========telaCliente=========*/
-.divFormAbrirChamado{}
-.formAbrirChamado{
-    
-}}
+    /*=========telaCliente=========*/
+    .divFormAbrirChamado{}
+    .formAbrirChamado{
+
+    }}
 /*==================*/
 /*============================================*/

@@ -1,69 +1,64 @@
-$(document).ready(function () {
+$(document).ready(function() {
     /*=======Todas as telas Admin=======*/
-    $("#opCliente, #opClienteClientInsert, #opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
-       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate,#opClientePerfilList,#opClienteUserInsert,\n\
-       #opClienteUserUpdate,#opClienteUserList").click(function () {
-        $("#ulSubMenuCliente,#ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
-           #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
-           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate,#ulSubMenuClientePerfilList,#ulSubMenuClienteUserInsert,\n\
-           #ulSubMenuClienteUserUpdate,#ulSubMenuClienteUserList").slideDown(200);
+    $(".drop1").click(function() {
+        $(".ulSubMenu1").slideDown();
     });
-    $("#opCliente, #opClienteClientInsert,#opClienteClientUpdate,#opClienteClientList,#opClienteMenuInsert,\n\
-       #opClienteMenuUpdate,#opClienteMenuList,#opClientePerfilInsert,#opClientePerfilUpdate,#opClientePerfilList,#opClienteUserInsert,\n\
-       #opClienteUserUpdate,#opClienteUserList").dblclick(function () {
-        $("#ulSubMenuCliente, #ulSubMenuClienteClientInsert,#ulSubMenuClienteClientUpdate,\n\
-           #ulSubMenuClienteClientList,#ulSubMenuClienteMenuInsert,#ulSubMenuClienteMenuUpdate,#ulSubMenuClienteMenuList,\n\
-           #ulSubMenuClientePerfilInsert,#ulSubMenuClientePerfilUpdate,#ulSubMenuClientePerfilList,#ulSubMenuClienteUserInsert,\n\
-           #ulSubMenuClienteUserUpdate,#ulSubMenuClienteUserList").slideUp(200);
+    $(".li1").hover(function() {
+        $(".ulSubMenu1").slideUp();
     });
-    $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
-       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate,#opUsuarioPerfilList,#opUsuarioUserInsert,\n\
-       #opUsuarioUserUpdate,#opUsuarioUserList").click(function () {
-        $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
-           #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
-           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate,#ulSubMenuUsuarioPerfilList,#ulSubMenuUsuarioUserInsert,\n\
-           #ulSubMenuUsuarioUserUpdate,#ulSubMenuUsuarioUserList").slideDown(200);
+
+    $(".drop2").click(function() {
+        $(".ulSubMenu2").slideDown();
     });
-    $("#opUsuario, #opUsuarioClientInsert,#opUsuarioClientUpdate,#opUsuarioClientList,#opUsuarioMenuInsert,\n\
-       #opUsuarioMenuUpdate,#opUsuarioMenuList,#opUsuarioPerfilInsert,#opUsuarioPerfilUpdate,#opUsuarioPerfilList,#opUsuarioUserInsert,\n\
-       #opUsuarioUserUpdate,#opUsuarioUserList").dblclick(function () {
-        $("#ulSubMenuUsuario, #ulSubMenuUsuarioClientInsert,#ulSubMenuUsuarioClientUpdate,\n\
-           #ulSubMenuUsuarioClientList,#ulSubMenuUsuarioMenuInsert,#ulSubMenuUsuarioMenuUpdate,#ulSubMenuUsuarioMenuList,\n\
-           #ulSubMenuUsuarioPerfilInsert,#ulSubMenuUsuarioPerfilUpdate,#ulSubMenuUsuarioPerfilList,#ulSubMenuUsuarioUserInsert,\n\
-           #ulSubMenuUsuarioUserUpdate,#ulSubMenuUsuarioUserList").slideUp(200);
+    $(".li2").hover(function() {
+        $(".ulSubMenu2").slideUp();
     });
-    $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
-       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate,#opMenuPerfilList,#opMenuUserInsert\n\,\n\
-       #opMenuUserUpdate,#opMenuUserList").click(function () {
-        $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
-           #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
-           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate,#ulSubMenuMenuPerfilList,#ulSubMenuMenuUserInsert,\n\
-           #ulSubMenuMenuUserUpdate,#ulSubMenuMenuUserList").slideDown(200);
+    
+    $(".drop3").click(function() {
+        $(".ulSubMenu3").slideDown();
     });
-    $("#opMenu, #opMenuClientInsert,#opMenuClientUpdate,#opMenuClientList,#opMenuMenuInsert,\n\
-       #opMenuMenuUpdate,#opMenuMenuList,#opMenuPerfilInsert,#opMenuPerfilUpdate,#opMenuPerfilList,#opMenuUserInsert,\n\
-       #opMenuUserUpdate,#opMenuUserList").dblclick(function () {
-        $("#ulSubMenuMenu, #ulSubMenuMenuClientInsert, #ulSubMenuMenuClientUpdate,\n\
-           #ulSubMenuMenuClientList,#ulSubMenuMenuMenuInsert,#ulSubMenuMenuMenuUpdate,#ulSubMenuMenuMenuList,\n\
-           #ulSubMenuMenuPerfilInsert,#ulSubMenuMenuPerfilUpdate,#ulSubMenuMenuPerfilList,#ulSubMenuMenuUserInsert,\n\
-           #ulSubMenuMenuUserUpdate,#ulSubMenuMenuUserList").slideUp(200);
+    $(".li3").hover(function() {
+        $(".ulSubMenu3").slideUp();
     });
-    $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
-       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate,#opPerfilPerfilList, #opPerfilUserInsert\n\,\n\
-       #opPerfilUserUpdate,#opPerfilUserList").click(function () {
-        $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
-           #ulSubMenuPerfilClientList, #ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
-           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate, #ulSubMenuPerfilPerfilList, #ulSubMenuPerfilUserInsert,\n\
-           #ulSubMenuPerfilUserUpdate,#ulSubMenuPerfilUserList").slideDown(200);
+    
+    $(".drop4").click(function() {
+        $(".ulSubMenu4").slideDown();
     });
-    $("#opPerfil, #opPerfilClientInsert,#opPerfilClientUpdate,#opPerfilClientList,#opPerfilMenuInsert,\n\
-       #opPerfilMenuUpdate,#opPerfilMenuList,#opPerfilPerfilInsert,#opPerfilPerfilUpdate,#opPerfilPerfilList,#opPerfilUserInsert,\n\
-       #opPerfilUserUpdate,#opPerfilUserList").dblclick(function () {
-        $("#ulSubMenuPerfil, #ulSubMenuPerfilClientInsert, #ulSubMenuPerfilClientInsert,\n\
-           #ulSubMenuPerfilClientList,#ulSubMenuPerfilMenuInsert,#ulSubMenuPerfilMenuUpdate,#ulSubMenuPerfilMenuList,\n\
-           #ulSubMenuPerfilPerfilInsert,#ulSubMenuPerfilPerfilUpdate,#ulSubMenuPerfilPerfilList,#ulSubMenuPerfilUserInsert,\n\
-           #ulSubMenuPerfilUserUpdate,#ulSubMenuPerfilUserList").slideUp(200);
+    $(".li4").hover(function() {
+        $(".ulSubMenu4").slideUp();
     });
+    
+    $(".drop5").click(function() {
+        $(".ulSubMenu5").slideDown();
+    });
+    $(".li5").hover(function() {
+        $(".ulSubMenu5").slideUp();
+    });
+    
+    $(".drop6").click(function() {
+        $(".ulSubMenu6").slideDown();
+    });
+    $(".li6").hover(function() {
+        $(".ulSubMenu6").slideUp();
+    });
+    
+    $(".drop7").click(function() {
+        $(".ulSubMenu7").slideDown();
+    });
+    $(".li7").hover(function() {
+        $(".ulSubMenu7").slideUp();
+    });
+    
+    $(".drop8").click(function() {
+        $(".ulSubMenu8").slideDown();
+    });
+    $(".li8").hover(function() {
+        $(".ulSubMenu8").slideUp();
+    });
+    
+    
+
+    
 
     /*=======Todas as telas Tecnico=======*/
     $("#opChamado,#opChamadoEquipamentoInsert,#opChamadoEquipamentoUpdate,#opChamadoEquipamentoList, #opChamadoChamadoOpen,#opChamadoChamadoDetail,\n\
@@ -87,7 +82,7 @@ $(document).ready(function () {
            #ulSubMenuEquipamentoEquipamentoList,#ulSubMenuEquipamentoChamadoOpen,#ulSubMenuEquipamentoChamadoDetail,#ulSubMenuEquipamentoChamadoSearch").slideUp(200);
     });
     /*==============*/
-    
+
     $(".btnOpenMenu").click(function () {
         $(".divDadosPerfil").fadeIn(200);
         $(".controleChamado").fadeOut(0);
@@ -105,8 +100,8 @@ $(window).resize(function () {
         $(".controleChamado").fadeIn(0);
         $(".divFormAbrirChamado").fadeIn(0);
     }
-    
-    if($(window).width() < 992){
+
+    if ($(window).width() < 992) {
         $(".divDadosPerfil").fadeOut(0);
         $(".controleChamado").fadeIn(0);
         $(".divFormAbrirChamado").fadeIn(0);
