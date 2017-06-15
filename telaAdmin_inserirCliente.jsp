@@ -20,9 +20,9 @@
 <body class="body">
     <div class="container-fluid">
         <div class="row">
-            <section id="sectionAdminClientInsert" class="section">
+            <section id="sectionAdmin" class="section">
                 <!--=======================MENU PERFIL=======================-->
-                               <div id="divDadosPerfilAdmin" class="divDadosPerfil col-xs-12 col-md-3 ">
+                <div id="divDadosPerfilAdmin" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
                             <a href="index.jsp"><div class="position imgLogo"></div></a>
@@ -53,11 +53,14 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
+                                            </li>
+                                            <li id="liSubMenuChamado3" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Chamados</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -69,10 +72,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu2" class="ulSubMenu ulSubMenu2">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Equipamento</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Equipamentos</a>
                                             </li>
                                         </ul>
@@ -85,11 +88,11 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu3" class="ulSubMenu ulSubMenu3">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEstoque1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Estoque</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-eye"></i>&nbsp;&nbsp;Ver Estoques</a>
+                                            <li id="liSubMenuEstoque2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Lista de Estoques</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -101,11 +104,11 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu4" class="ulSubMenu ulSubMenu4">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuComponente1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Componente</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Estoque de Componentes</a>
+                                            <li id="liSubMenuComponente2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Lista de Componentes</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -117,7 +120,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu5" class="ulSubMenu ulSubMenu5">
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuCliente1" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Cliente</a>
+                                            </li>
+                                            <li id="liSubMenuCliente2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Clientes</a>
                                             </li>
                                         </ul>
@@ -130,10 +136,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu6" class="ulSubMenu ulSubMenu6">
-                                            <li id="liSubMenuUsuarioInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuUsuario1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Usuário</a>
                                             </li>
-                                            <li id="liSubMenuUsuarioListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuUsuario2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Usuários</a>
                                             </li>
                                         </ul>
@@ -146,10 +152,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu7" class="ulSubMenu ulSubMenu7">
-                                            <li id="liSubMenuMenuInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuMenu1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Menu</a>
                                             </li>
-                                            <li id="liSubMenuMenuListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuMenu2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Menus</a>
                                             </li>
                                         </ul>
@@ -162,10 +168,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu8" class="ulSubMenu ulSubMenu8">
-                                            <li id="liSubMenuPerfilInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuPerfil1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Perfil</a>
                                             </li>
-                                            <li id="liSubMenuPerfilListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuPerfil2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Perfis</a>
                                             </li>
                                         </ul>
@@ -176,21 +182,21 @@
                 </div>
                 <!--==============================================-->
                 <!--=======================CONTROLE DE CHAMADOS=======================-->
-                <div id="divAdminClientInsert" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
+                <div id="divControlAdmin" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
-                        <div id="headerSectionAdminClientInsert" class="position headerSection">
+                        <div id="headerSectionAdmin" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</h3>
+                            <h3 class="position"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Cliente</h3>
                         </div>
-                        <div id="divFormClientInsert" class="col-xs-12 divForm">
+                        <div id="divForm" class="col-xs-12 divForm">
                             <center>
-                                <form action="#" method="POST" id="formClientInsert" class="position formClient">
+                                <form action="#" method="POST" id="form" class="position form">
                                     Matrícula:<br/><input type="text" name="matCliente" id="matCliente" maxlength="30" required class="input"><br/><br/> 
                                     Nome:<br/><input type="text" name="nomeCliente" id="nomeCliente" maxlength="50" required class="input"><br/><br/>
                                     CPF:<br/><input type="text" name="cpfCliente" id="cpfCliente" maxlength="30" required class="input"><br/><br/>
                                     Setor:<br/><input type="text" name="setorCliente" id="setorCliente" maxlength="30" required class="input"><br/><br/>
                                     Telefone:<br/><input type="text" name="telCliente" id="telCliente" maxlength="30" required class="input"><br/><br/>
-                                    <input type="submit" value="Inserir Cliente">
+                                    <input type="submit" value="Salvar">
                                 </form>
                             </center>
                         </div>

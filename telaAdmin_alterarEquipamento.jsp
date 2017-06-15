@@ -186,16 +186,14 @@
                     <div class="row">
                         <div id="headerSectionAdmin" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Cliente</h3>
+                            <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Equipamento</h3>
                         </div>
                         <div id="divForm" class="col-xs-12 divForm">
                             <center>
                                 <form action="#" method="POST" id="form" class="position form">
-                                    Matrícula:<br/><input type="text" name="matCliente" id="matCliente" maxlength="30" required class="input"><br/><br/> 
-                                    Nome:<br/><input type="text" name="nomeCliente" id="nomeCliente" maxlength="50" required class="input"><br/><br/>
-                                    CPF:<br/><input type="text" name="cpfCliente" id="cpfCliente" maxlength="30" required class="input"><br/><br/>
-                                    Setor:<br/><input type="text" name="setorCliente" id="setorCliente" maxlength="30" required class="input"><br/><br/>
-                                    Telefone:<br/><input type="text" name="telCliente" id="telCliente" maxlength="30" required class="input"><br/><br/>
+                                    Etiqueta:<br/><input type="text" name="etiquetaEquipamento" id="etiquetaEquipamento" maxlength="30" required class="input"><br/><br/> 
+                                    Tipo:<br/><input type="text" name="tipoEquipamento" id="tipoEquipamento" maxlength="50" required class="input"><br/><br/>
+                                    Data de Instalação:<br/><input type="text" name="dataInstalacao" id="dataInstalacao" maxlength="30" required class="input"><br/><br/>
                                     <input type="submit" value="Salvar">
                                 </form>
                             </center>

@@ -12,8 +12,8 @@ html,body{height: 100%;}
 .margin{margin-left: auto; margin-right: auto;}
 .i{font-size: 3.5em;}
 .input{
-    border: 1px solid;
-    border-color: transparent transparent orange transparent;
+    border: 1px solid #252422;
+    border-radius: 5px;
     color: #403d39;
     text-align: center;
     outline: none;}
@@ -158,9 +158,10 @@ html,body{height: 100%;}
 
 .headerSection{
     width: 100%;
-    height: 130px;
+    height: 80px;
     margin-top: -20px;
-    border-bottom: 1px solid #252422;
+    border-bottom: 3px solid #ccc;
+    background: #eb5e28;
     text-align: center;
     font-family: "Lato-Light";}
 .btnOpenMenu{
@@ -169,7 +170,7 @@ html,body{height: 100%;}
     top: 10px;
     right: 10px;
     font-size: 1.5em;}
-.headerSection h3{top: 70px; color: #252422; font-size: 1.5em;}
+.headerSection h3{top: 30px; color: white; font-size: 1.5em;}
 .menuControleChamado{
     height: auto;
     margin-top: 15%;
@@ -204,30 +205,31 @@ html,body{height: 100%;}
 
 /*=========telaAdmin_inserirCliente,telaAdmin_alterarCliente, telaAdmin_inserirMenu, telaAdmin_inserirPerfil,telaAdmin_alterarPerfil, telaAdmin_inserirUsuario,
            telaTecnico_inserirEquipamento=========*/
+/*=========FORMULÁRIO PARA INSERÇÃO DE CLIENTE/USUÁRIO=========*/
 .divForm{
     height: 450px;
     margin-bottom: 10px;
     color: #403d39;}
-.formClient{
+.form{
     margin-top: 20px;
     top: 30px;}
-.formClient input{
+.form input{
     border-radius: 5px;}
-.formClient input[type="submit"]{
+.form input[type="submit"]{
     border: none;
     border-radius: 5px;
     background: #eb5e28;
     font-size: 16px;
     color: white;
     outline: none;}
-.formClient select{
+.form select{
     padding: 0px 5px;
     border-radius: 5px;
     outline: none;}
 /*==================*/
 
 /*=========lista_clientes, lista_menus, lista_perfis, lista_usuarios, lista_equipamentos=========*/
-#divTableClientList, #divTableMenuList, #divTablePerfilList, #divTableUserList, #divTableEquipamentoList{
+.divTableList{
     height: 400px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -252,34 +254,40 @@ html,body{height: 100%;}
 /*==================*/
 
 /*=========telaCliente, telaCliente_pesquisarChamado,telaTecnico_pesquisarChamado=========*/
-.divFormAbrirChamado{
-    width: 320px;
-    height: 330px;
-    overflow: auto;
-    margin-top: 15px;
+/*=========FORMULÁRIO DE CHAMADO=========*/
+.divForm2{
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
     margin-bottom: 5px;}
-.formAbrirChamado{
-    width: 300px;
-    height: 450px;
+.form2{
+    display: block;
+    width: 250px;
+    height: auto;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px #999;
     text-align: center;
     font-family: "Lato-Light";
     color: #252422;}
-#formPesquisarChamadoCliente,#formPesquisarChamadoTecnico{height: 150px; margin-top: 30px;}
 .labelChamado{
+    width: 220px;
     font-size: 18px;}
-.formAbrirChamado textarea{
-    border: 1px solid orange;
+#lblEtiqEquipamento{margin-top: 15px;}
+#lblPesquisa{width: 280px;}
+.form2 textarea{
+    border: 1px solid #252422;
     border-radius: 3px;
     color: black;
     outline: none;}
-.inputChamado{
-    width: 200px;
+.inputChamado, .select{
+    display: inline-block;
+    width: 200px;   
     background: none;}
+#inputLocalidade{width: 150px;}
+#inputEtiqueta {width:100px;}
 .btnAbrirChamado{
     border: none;
     border-radius: 5px;
@@ -295,11 +303,11 @@ html,body{height: 100%;}
     .logo{
         display: block;
         height: 50px;
-        background: #eb5e28;}
+        background: #252422;}
     .imgLogo{
-        width: 200px;
-        height: 40px;
-        top: 10px;
+        width: 160px;
+        height: 30px;
+        top: 20px;
         background: url("../img/logo_small.png");
         background-position: 50%;
         background-size: cover;}
@@ -312,10 +320,21 @@ html,body{height: 100%;}
         width: 160px;
         margin-left: 20px;
         font-size: 16px;}
-    /*=========telaCliente=========*/
-    .divFormAbrirChamado{}
-    .formAbrirChamado{
+/*==================FORMULÁRIO DE CHAMADO==================*/
+    .form2{width: 600px;}
+    #lblLocalidade{
+        width: 100px;
+        float: left;
+        text-align: right;}
+    #lblEtiqEquipamento{text-align: right;}  
+    #lblStatus, #lblResponsavel{width: 100px;text-align: right;}
+    #lblEquipamento{width: 110px; margin-left: -10px;}
+    #lblEtiqEquipamento{margin-top: 0px; margin-left: 10px;}
 
-    }}
+    #lblModelo, #lblTipo, #lblMarca{
+        display: inline-block;
+        width: 80px;
+        text-align: center;}
+}
 /*==================*/
 /*============================================*/

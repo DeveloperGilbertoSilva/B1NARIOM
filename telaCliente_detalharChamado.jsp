@@ -43,7 +43,7 @@
                         <div id="divMenuPerfilClienteChamadoDetail" class="divMenuPerfil">
                             <nav id="navMenuClienteChamadoDetail" class="navMenu">
                                 <ul id="ulMenuClienteChamadoDetail" class="ulMenu" type="none">
-                                    <li id="liPesquisarChamadoClienteChamadoDetail" class="liMenu">
+                                    <li id="liPesquisarChamadoClienteChamadoDetail" class="liMenu liVisaoGeral">
                                         <a href="telaCliente.jsp">
                                             <h5 class="op"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;Abrir chamado</h5>
                                         </a>

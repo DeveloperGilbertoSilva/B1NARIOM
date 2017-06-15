@@ -37,7 +37,7 @@
                             <h5 id="titleSetorAdmin" class="titleSetor">Área Administrativa</h5>
                         </div>
                         <!--==============================================-->
-                        <div id="divMenuPerfilAdmin" class="divMenuPerfil">
+                                                <div id="divMenuPerfilAdmin" class="divMenuPerfil">
                             <nav id="navMenuAdmin" class="navMenu">
                                 <ul id="ulMenuAdmin" class="position margin ulMenu" type="none">
                                     <li id="liVisaoGeralAdmin" class="margin liVisaoGeral liVisaoGeralAdmin">
@@ -45,7 +45,7 @@
                                             <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
                                     </li>
-
+                                    
                                     <li id="li1" class="margin liVisaoGeral li1">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-envelope iMenu" aria-hidden="true"></i>
@@ -64,7 +64,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li2" class="margin liVisaoGeral li2">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-laptop iMenu" aria-hidden="true"></i>
@@ -80,7 +80,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li3" class="margin liVisaoGeral li3">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-database iMenu" aria-hidden="true"></i>
@@ -96,7 +96,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li4" class="margin liVisaoGeral li4">
                                         <a href="#">
                                             <h5 class="op"><i class="glyphicon glyphicon-print iMenu" aria-hidden="true"></i>
@@ -112,7 +112,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li5" class="margin liVisaoGeral li5">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-user-circle iMenu" aria-hidden="true"></i>
@@ -128,14 +128,14 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li6" class="margin liVisaoGeral li6">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-users iMenu" aria-hidden="true"></i>
                                                 &nbsp;&nbsp;Usuarios&nbsp;&nbsp;<i class="fa fa-caret-down drop6" aria-hidden="true"></i>
                                             </h5>
                                         </a>
-                                        <ul id="ulSubMenu6" class="ulSubMenu ulSubMenu6">
+                                         <ul id="ulSubMenu6" class="ulSubMenu ulSubMenu6">
                                             <li id="liSubMenuUsuario1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Usuário</a>
                                             </li>
@@ -144,7 +144,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li7" class="margin liVisaoGeral li7">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-bars iMenu" aria-hidden="true"></i>
@@ -160,7 +160,7 @@
                                             </li>
                                         </ul>
                                     </li>
-
+                                    
                                     <li id="li8" class="margin liVisaoGeral li8">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-address-book iMenu" aria-hidden="true"></i>
@@ -176,6 +176,8 @@
                                             </li>
                                         </ul>
                                     </li>
+
+
                             </nav>
                         </div>
                     </div>
@@ -186,18 +188,26 @@
                     <div class="row">
                         <div id="headerSectionAdmin" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Cliente</h3>
+                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Menus</h3>
                         </div>
-                        <div id="divForm" class="col-xs-12 divForm">
+                        <div id="divTableList" class="divTableList col-xs-10 col-xs-offset-1">
                             <center>
-                                <form action="#" method="POST" id="form" class="position form">
-                                    Matrícula:<br/><input type="text" name="matCliente" id="matCliente" maxlength="30" required class="input"><br/><br/> 
-                                    Nome:<br/><input type="text" name="nomeCliente" id="nomeCliente" maxlength="50" required class="input"><br/><br/>
-                                    CPF:<br/><input type="text" name="cpfCliente" id="cpfCliente" maxlength="30" required class="input"><br/><br/>
-                                    Setor:<br/><input type="text" name="setorCliente" id="setorCliente" maxlength="30" required class="input"><br/><br/>
-                                    Telefone:<br/><input type="text" name="telCliente" id="telCliente" maxlength="30" required class="input"><br/><br/>
-                                    <input type="submit" value="Salvar">
-                                </form>
+                                <table class="tableList table table-responsive">
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nome</th>
+                                        <th>Link</th>
+                                        <th>Perfil</th>
+                                        <th>Opções</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#" title="Alterar"><i class="fa fa-pencil" aria-hidden="true"></i></a> ou <a href="#" title="Excluir"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
                             </center>
                         </div>
                     </div>

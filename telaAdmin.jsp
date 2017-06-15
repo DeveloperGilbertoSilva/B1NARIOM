@@ -37,7 +37,7 @@
                             <h5 id="titleSetorAdmin" class="titleSetor">Área Administrativa</h5>
                         </div>
                         <!--==============================================-->
-                        <div id="divMenuPerfilAdmin" class="divMenuPerfil">
+                                               <div id="divMenuPerfilAdmin" class="divMenuPerfil">
                             <nav id="navMenuAdmin" class="navMenu">
                                 <ul id="ulMenuAdmin" class="position margin ulMenu" type="none">
                                     <li id="liVisaoGeralAdmin" class="margin liVisaoGeral liVisaoGeralAdmin">
@@ -53,11 +53,14 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
+                                            </li>
+                                            <li id="liSubMenuChamado3" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Chamados</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -69,10 +72,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu2" class="ulSubMenu ulSubMenu2">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Equipamento</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Equipamentos</a>
                                             </li>
                                         </ul>
@@ -85,10 +88,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu3" class="ulSubMenu ulSubMenu3">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEstoque1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Estoque</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEstoque2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-eye"></i>&nbsp;&nbsp;Ver Estoques</a>
                                             </li>
                                         </ul>
@@ -101,10 +104,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu4" class="ulSubMenu ulSubMenu4">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuComponente1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Componente</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuComponente2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Estoque de Componentes</a>
                                             </li>
                                         </ul>
@@ -117,10 +120,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu5" class="ulSubMenu ulSubMenu5">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuCliente1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Cliente</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuCliente2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Clientes</a>
                                             </li>
                                         </ul>
@@ -133,10 +136,10 @@
                                             </h5>
                                         </a>
                                          <ul id="ulSubMenu6" class="ulSubMenu ulSubMenu6">
-                                            <li id="liSubMenuUsuarioInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuUsuario1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Usuário</a>
                                             </li>
-                                            <li id="liSubMenuUsuarioListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuUsuario2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Usuários</a>
                                             </li>
                                         </ul>
@@ -149,10 +152,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu7" class="ulSubMenu ulSubMenu7">
-                                            <li id="liSubMenuMenuInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuMenu1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Menu</a>
                                             </li>
-                                            <li id="liSubMenuMenuListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuMenu2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Menus</a>
                                             </li>
                                         </ul>
@@ -165,10 +168,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu8" class="ulSubMenu ulSubMenu8">
-                                            <li id="liSubMenuPerfilInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuPerfil1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Perfil</a>
                                             </li>
-                                            <li id="liSubMenuPerfilListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuPerfil2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Perfis</a>
                                             </li>
                                         </ul>

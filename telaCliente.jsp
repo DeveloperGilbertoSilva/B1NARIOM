@@ -44,7 +44,7 @@
                         <div id="divMenuPerfilCliente" class="divMenuPerfil">
                             <nav id="navMenuCliente" class="navMenu">
                                 <ul id="ulMenuCliente" class="ulMenu" type="none">
-                                    <li id="liPesquisarChamadoCliente" class="liMenu">
+                                    <li id="liPesquisarChamadoCliente" class="liMenu liVisaoGeral">
                                         <a href="telaCliente_pesquisarChamado.jsp">
                                             <h5 class="op"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Pesquisar chamado</h5>
                                         </a>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <!--==============================================-->
-                <!--=======================CONTROLE DE CHAMADOS=======================-->
+                <!--=======================FORMULÁRIO DE CHAMADO=======================-->
                 <div id="divAbrirChamadoCliente" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
                         <div id="headerSectionCliente" class="position headerSection">
@@ -64,19 +64,22 @@
                         </div>
                         <div id="divFormAbrirChamadoCliente" class="divFormAbrirChamado">
                             <form method="POST" action="#" id="formAbrirChamadoCliente" class="formAbrirChamado">
-                                <label id="" class="labelChamado">Descrição: </label>
+                                <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
                                 <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
+                                <hr></hr>
+                                <label id="lblLocalidade" class="labelChamado">Localidade:</label>
+                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">
                                 
-                                <label id="" class="labelChamado">Localidade:</label><br/>
-                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/>
+                                <label id="lblEtiqEquipamento" class="labelChamado">Etiqueta do Equipamento:</label>
+                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputEtiqueta" class="input inputChamado margin">
+                                <br/>
+                                <hr></hr>
+                                <label id="lblStatus" class="labelChamado">Status:</label>
+                                <select title="Selecione o status" class="position select">
+                                    <option></option>
+                                </select><br/><br/>
                                 
-                                <label id="" class="labelChamado">Etiqueta do Equipamento:</label><br/>
-                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/>
-                                
-                                <label id="" class="labelChamado">Status:</label><br/>
-                                <input type="text" name="statusChamado" maxlength="20" id="inputLocalidadeCliente" class="input inputChamado margin"><br/><br/><br/>
-                                
-                                <input type="submit" name="btnAbrirChamado" id="btnAbrirChamadoCliente" class="btnAbrirChamado margin" value="Abrir Chamado">
+                                <input type="submit" name="btnAbrirChamado" id="btnAbrirChamadoCliente" class="btnAbrirChamado margin" value="Salvar">
                             </form>
                         </div>
                     </div>

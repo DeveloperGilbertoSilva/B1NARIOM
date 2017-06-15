@@ -1,55 +1,55 @@
 $(document).ready(function() {
     /*=======Todas as telas Admin=======*/
-    $(".drop1").click(function() {
+    $(".li1").click(function() {
         $(".ulSubMenu1").slideDown();
     });
     $(".li1").hover(function() {
         $(".ulSubMenu1").slideUp();
     });
 
-    $(".drop2").click(function() {
+    $(".li2").click(function() {
         $(".ulSubMenu2").slideDown();
     });
     $(".li2").hover(function() {
         $(".ulSubMenu2").slideUp();
     });
     
-    $(".drop3").click(function() {
+    $(".li3").click(function() {
         $(".ulSubMenu3").slideDown();
     });
     $(".li3").hover(function() {
         $(".ulSubMenu3").slideUp();
     });
     
-    $(".drop4").click(function() {
+    $(".li4").click(function() {
         $(".ulSubMenu4").slideDown();
     });
     $(".li4").hover(function() {
         $(".ulSubMenu4").slideUp();
     });
     
-    $(".drop5").click(function() {
+    $(".li5").click(function() {
         $(".ulSubMenu5").slideDown();
     });
     $(".li5").hover(function() {
         $(".ulSubMenu5").slideUp();
     });
     
-    $(".drop6").click(function() {
+    $(".li6").click(function() {
         $(".ulSubMenu6").slideDown();
     });
     $(".li6").hover(function() {
         $(".ulSubMenu6").slideUp();
     });
     
-    $(".drop7").click(function() {
+    $(".li7").click(function() {
         $(".ulSubMenu7").slideDown();
     });
     $(".li7").hover(function() {
         $(".ulSubMenu7").slideUp();
     });
     
-    $(".drop8").click(function() {
+    $(".li8").click(function() {
         $(".ulSubMenu8").slideDown();
     });
     $(".li8").hover(function() {

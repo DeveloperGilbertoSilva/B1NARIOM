@@ -37,34 +37,78 @@
                             <h5 id="titleSetorTecnicoChamadoSearch" class="titleSetor">Área Técnica</h5>
                         </div>
                         <!--==============================================-->
-                        <div id="divMenuPerfilTecnicoChamadoSearch" class="divMenuPerfil">
-                            <nav id="navMenuTecnicoChamadoSearch" class="navMenu">
-                                <ul id="ulMenuTecnicoChamadoSearch" class="ulMenu" type="none">
-                                    <li id="liVisaoGeralTecnicoChamadoSearch" class="liMenu">
-                                        <a href="telaTecnico.jsp">
+                         <div id="divMenuPerfilTecnico" class="divMenuPerfil">
+                            <nav id="navMenuTecnico" class="navMenu">
+                                <ul id="ulMenuTecnico" class="position margin ulMenu" type="none">
+                                    <li id="liVisaoGeralTecnico" class="margin liVisaoGeral liVisaoGeralAdmin">
+                                        <a href="#">
                                             <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
                                     </li>
-
-                                    <li id="liChamadoChamadoSearch" class="liMenu">
+                                    
+                                    <li id="li1" class="margin liVisaoGeral li1">
                                         <a href="#">
-                                            <h5 id="opChamadoChamadoSearch" class="op">Chamado &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 class="op"><i class="fa fa-envelope iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Chamado&nbsp;&nbsp;<i class="fa fa-caret-down drop1" aria-hidden="true"></i>
+                                            </h5>
                                         </a>
-                                        <ul id="ulSubMenuChamadoChamadoSearch" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuPesquisarChamadoSearch" class="liSubMenu"><a href="telaTecnico_abrirChamado.jsp"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</a></li>
+                                        <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
+                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
+                                            </li>
+                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
+                                            </li>
                                         </ul>
                                     </li>
-
-                                    <li id="liEquipamentoChamadoSearch" class="liMenu">
+                                    
+                                    <li id="li2" class="margin liVisaoGeral li2">
                                         <a href="#">
-                                            <h5 id="opEquipamentoChamadoSearch" class="op">Equipamento &nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></h5>
+                                            <h5 class="op"><i class="fa fa-laptop iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Equipamento&nbsp;&nbsp;<i class="fa fa-caret-down drop2" aria-hidden="true"></i>
+                                            </h5>
                                         </a>
-                                        <ul id="ulSubMenuEquipamentoChamadoSearch" class="margin ulSubMenu" type="none">
-                                            <li id="liSubMenuInsereEquipamentoChamadoSearch" class="liSubMenu"><a href="telaTecnico_inserirEquipamento.jsp"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Inserir Equipamento</a></li>
-                                            <li id="liSubMenuListaEquipamentoChamadoSearch" class="liSubMenu"><a href="lista_equipamentos.jsp"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Listar Equipamento</a></li>
+                                        <ul id="ulSubMenu2" class="ulSubMenu ulSubMenu2">
+                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Equipamento</a>
+                                            </li>
+                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Equipamentos</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                </ul>
+                                    
+                                    <li id="li3" class="margin liVisaoGeral li3">
+                                        <a href="#">
+                                            <h5 class="op"><i class="fa fa-database iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Estoque&nbsp;&nbsp;<i class="fa fa-caret-down drop3" aria-hidden="true"></i>
+                                            </h5>
+                                        </a>
+                                        <ul id="ulSubMenu3" class="ulSubMenu ulSubMenu3">
+                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Estoque</a>
+                                            </li>
+                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-eye"></i>&nbsp;&nbsp;Ver Estoques</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li id="li4" class="margin liVisaoGeral li4">
+                                        <a href="#">
+                                            <h5 class="op"><i class="glyphicon glyphicon-print iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Componente&nbsp;&nbsp;<i class="fa fa-caret-down drop4" aria-hidden="true"></i>
+                                            </h5>
+                                        </a>
+                                        <ul id="ulSubMenu4" class="ulSubMenu ulSubMenu4">
+                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Componente</a>
+                                            </li>
+                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Estoque de Componentes</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                             </nav>
                         </div>
                     </div>
