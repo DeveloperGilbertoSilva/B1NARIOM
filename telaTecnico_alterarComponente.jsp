@@ -112,6 +112,22 @@
                                             </li>
                                         </ul>
                                     </li>
+
+                                    <li id="li6" class="margin liVisaoGeral li6">
+                                        <a href="#">
+                                            <h5 class="op"><i class="fa fa-users iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Usuarios&nbsp;&nbsp;<i class="fa fa-caret-down drop6" aria-hidden="true"></i>
+                                            </h5>
+                                        </a>
+                                        <ul id="ulSubMenu6" class="ulSubMenu ulSubMenu6">
+                                            <li id="liSubMenuUsuario1" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Usuário</a>
+                                            </li>
+                                            <li id="liSubMenuUsuario2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Usuários</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                             </nav>
                         </div>
                     </div>
@@ -122,29 +138,30 @@
                     <div class="row">
                         <div id="headerSectionTecnico" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Detalhe do Chamado: </h3>
+                            <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Componente</h3>
                         </div>
                         <div id="divForm2" class="divForm2">
                             <form method="POST" action="#" id="form2" class="form2">
+                                <label id="lblModelo" class="labelChamado">Modelo:</label>
+                                <input type="text" name="localidadeChamado" maxlength="20" id="inputModelo" class="input inputChamado margin"><br/><br/>
+
+                                <label id="lblTipo" class="labelChamado">Tipo:</label>
+                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputTipo" class="input inputChamado margin"><br/><br/>
+
+                                <label id="lblMarca" class="labelChamado">Marca:</label>
+                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputMarca" class="input inputChamado margin"><br/><br/>
+
                                 <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
                                 <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
-                                <hr></hr>
-                                <label id="lblLocalidade" class="labelChamado">Localidade:</label>
-                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">
 
-                                <label id="lblEtiqEquipamento" class="labelChamado">Etiqueta do Equipamento:</label>
-                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputEtiqueta" class="input inputChamado margin">
+
                                 <br/>
-                                <hr></hr>
+
                                 <label id="lblStatus" class="labelChamado">Status:</label>
-                                <select title="Selecione o status" class="position select" name="statusChamado">
-                                    <option></option>
-                                </select><br/>
-                                <label id="lblResponsavel" class="labelChamado">Responsável:</label>
-                                <select title="Selecione o responsável" class="position select" name="responsavelChamado">
+                                <select title="Selecione o status" class="position select">
                                     <option></option>
                                 </select><br/><br/>                                
-                                <input type="submit" name="btnAbrirChamado" id="btnDetalheChamado" class="btnAbrirChamado margin" value="Salvar">
+                                <input type="submit" name="btnAbrirChamado" id="btnAbrirChamadoCliente" class="btnAbrirChamado margin" value="Salvar">
                             </form>
                         </div>
                     </div>

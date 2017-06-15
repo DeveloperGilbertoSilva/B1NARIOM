@@ -59,9 +59,6 @@
                                             <li id="liSubMenuChamado2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
                                             </li>
-                                            <li id="liSubMenuChamado3" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Chamados</a>
-                                            </li>
                                         </ul>
                                     </li>
 
@@ -122,30 +119,27 @@
                     <div class="row">
                         <div id="headerSectionTecnico" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Detalhe do Chamado: </h3>
+                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Chamados</h3>
                         </div>
-                        <div id="divForm2" class="divForm2">
-                            <form method="POST" action="#" id="form2" class="form2">
-                                <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
-                                <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
-                                <hr></hr>
-                                <label id="lblLocalidade" class="labelChamado">Localidade:</label>
-                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">
-
-                                <label id="lblEtiqEquipamento" class="labelChamado">Etiqueta do Equipamento:</label>
-                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputEtiqueta" class="input inputChamado margin">
-                                <br/>
-                                <hr></hr>
-                                <label id="lblStatus" class="labelChamado">Status:</label>
-                                <select title="Selecione o status" class="position select" name="statusChamado">
-                                    <option></option>
-                                </select><br/>
-                                <label id="lblResponsavel" class="labelChamado">Responsável:</label>
-                                <select title="Selecione o responsável" class="position select" name="responsavelChamado">
-                                    <option></option>
-                                </select><br/><br/>                                
-                                <input type="submit" name="btnAbrirChamado" id="btnDetalheChamado" class="btnAbrirChamado margin" value="Salvar">
-                            </form>
+                        <div id="divTableList" class="divTableList col-xs-10 col-xs-offset-1">
+                            <center>
+                                <table class="tableList table table-responsive">
+                                    <tr>
+                                        <th>Número</th>
+                                        <th>Localidade</th>
+                                        <th>Etiqueta</th>
+                                        <th>Status</th>
+                                        <th>Opções</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#" title="Alterar"><i class="fa fa-pencil" aria-hidden="true"></i></a> ou <a href="#" title="Excluir"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
+                            </center>
                         </div>
                     </div>
                 </div>

@@ -122,30 +122,16 @@
                     <div class="row">
                         <div id="headerSectionTecnico" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Detalhe do Chamado: </h3>
+                            <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Estoque</h3>
                         </div>
-                        <div id="divForm2" class="divForm2">
-                            <form method="POST" action="#" id="form2" class="form2">
-                                <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
-                                <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
-                                <hr></hr>
-                                <label id="lblLocalidade" class="labelChamado">Localidade:</label>
-                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">
-
-                                <label id="lblEtiqEquipamento" class="labelChamado">Etiqueta do Equipamento:</label>
-                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputEtiqueta" class="input inputChamado margin">
-                                <br/>
-                                <hr></hr>
-                                <label id="lblStatus" class="labelChamado">Status:</label>
-                                <select title="Selecione o status" class="position select" name="statusChamado">
-                                    <option></option>
-                                </select><br/>
-                                <label id="lblResponsavel" class="labelChamado">Responsável:</label>
-                                <select title="Selecione o responsável" class="position select" name="responsavelChamado">
-                                    <option></option>
-                                </select><br/><br/>                                
-                                <input type="submit" name="btnAbrirChamado" id="btnDetalheChamado" class="btnAbrirChamado margin" value="Salvar">
-                            </form>
+                        <div id="divForm" class="col-xs-12 divForm">
+                            <center>
+                                <form action="#" method="POST" id="form" class="position form">
+                                    Nome:<br/><input type="text" name="nomeEstoque" id="nomeEstoque" maxlength="20" required class="input"><br/><br/>
+                                    Descrição:<br/><input type="text" name="descricaoEstoque" id="descricaoEstoque" maxlength="100" required class="input"><br/><br/><br/>  
+                                    <input type="submit" value="Salvar">
+                                </form>
+                            </center>
                         </div>
                     </div>
                 </div>

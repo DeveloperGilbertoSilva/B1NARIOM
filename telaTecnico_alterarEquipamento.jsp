@@ -1,7 +1,7 @@
 <%-- 
     Document   : telaTecnico
     Created on : 13/05/2017, 11:50:49
-    Author     : TestTecnicoistrador
+    Author     : TestAdministrador
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -20,9 +20,9 @@
 <body class="body">
     <div class="container-fluid">
         <div class="row">
-            <section id="sectionTecnicoEquipamentoUpdate" class="section">
+            <section id="sectionTecnico" class="section">
                 <!--=======================MENU PERFIL=======================-->
-                <div id="divDadosPerfilTecnicoEquipamentoUpdate" class="divDadosPerfil col-xs-12 col-md-3 ">
+                <div id="divDadosPerfilTecnico" class="divDadosPerfil col-xs-12 col-md-3 ">
                     <div class="row">
                         <div class="position logo col-xs-12">
                             <a href="index.jsp"><div class="position imgLogo"></div></a>
@@ -31,16 +31,16 @@
                         <i class="i fa fa-user-circle-o"></i>
                         <div class="btnCloseMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
                         <div class="dadosPerfil">
-                            <div id="nomeTecnicoEquipamentoUpdate" class="margin nome">Gilberto Lopes</div>
+                            <div id="nomeTecnico" class="margin nome">Gilberto Lopes</div>
                             <h4 class="titleMat">Matrícula:</h4>
-                            <div id="matriculaTecnicoEquipamentoUpdate" class="margin matricula">xxxxx-x</div>
-                            <h5 id="titleSetorTecnicoEquipamentoUpdate" class="titleSetor">Área Técnica</h5>
+                            <div id="matriculaTecnico" class="margin matricula">xxxxx-x</div>
+                            <h5 id="titleSetorTecnico" class="titleSetor">Área Técnica</h5>
                         </div>
                         <!--==============================================-->
                         <div id="divMenuPerfilTecnico" class="divMenuPerfil">
                             <nav id="navMenuTecnico" class="navMenu">
                                 <ul id="ulMenuTecnico" class="position margin ulMenu" type="none">
-                                    <li id="liVisaoGeralTecnico" class="margin liVisaoGeral liVisaoGeralAdmin">
+                                    <li id="liVisaoGeralTecnico" class="margin liVisaoGeral liVisaoGeralTecnico">
                                         <a href="#">
                                             <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
@@ -53,11 +53,14 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuChamado2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
+                                            </li>
+                                            <li id="liSubMenuChamado3" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Chamados</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -69,10 +72,10 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu2" class="ulSubMenu ulSubMenu2">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Equipamento</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEquipamento2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Equipamentos</a>
                                             </li>
                                         </ul>
@@ -85,11 +88,11 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu3" class="ulSubMenu ulSubMenu3">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuEstoque1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Estoque</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-eye"></i>&nbsp;&nbsp;Ver Estoques</a>
+                                            <li id="liSubMenuEstoque2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Lista de Estoques</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -101,11 +104,11 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu4" class="ulSubMenu ulSubMenu4">
-                                            <li id="liSubMenuClienteInsertAdmin" class="liSubMenu">
+                                            <li id="liSubMenuComponente1" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Inserir Componente</a>
                                             </li>
-                                            <li id="liSubMenuClienteListAdmin" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Estoque de Componentes</a>
+                                            <li id="liSubMenuComponente2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Lista de Componentes</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -115,19 +118,19 @@
                 </div>
                 <!--==============================================-->
                 <!--=======================CONTROLE DE CHAMADOS=======================-->
-                <div id="divTecnicoEquipamentoUpdate" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
+                <div id="divControlTecnico" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
-                        <div id="headerSectionTecnicoEquipamentoUpdate" class="position headerSection">
+                        <div id="headerSectionTecnico" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
                             <h3 class="position"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;Alterar Equipamento</h3>
                         </div>
-                        <div id="divFormEquipamentoUpdate" class="col-xs-12 divForm">
+                        <div id="divForm" class="col-xs-12 divForm">
                             <center>
-                                <form action="#" method="POST" id="formEquipamentoUpdate" class="position formClient">
+                                <form action="#" method="POST" id="form" class="position form">
                                     Etiqueta:<br/><input type="text" name="etiquetaEquipamento" id="etiquetaEquipamento" maxlength="30" required class="input"><br/><br/> 
                                     Tipo:<br/><input type="text" name="tipoEquipamento" id="tipoEquipamento" maxlength="50" required class="input"><br/><br/>
                                     Data de Instalação:<br/><input type="text" name="dataInstalacao" id="dataInstalacao" maxlength="30" required class="input"><br/><br/>
-                                    <input type="submit" value="Inserir Equipamento">
+                                    <input type="submit" value="Salvar">
                                 </form>
                             </center>
                         </div>
