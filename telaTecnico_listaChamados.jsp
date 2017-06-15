@@ -136,7 +136,7 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td><a href="#" title="Alterar"><i class="fa fa-pencil" aria-hidden="true"></i></a> ou <a href="#" title="Excluir"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                        <td><a href="#" title="Detalhar"><i class="fa fa-search" aria-hidden="true"></i></a> ou <a href="#" title="Cancelar"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                     </tr>
                                 </table>
                             </center>

@@ -53,9 +53,6 @@
                                             </h5>
                                         </a>
                                         <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
-                                            <li id="liSubMenuChamado1" class="liSubMenu">
-                                                <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
-                                            </li>
                                             <li id="liSubMenuChamado2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
                                             </li>
@@ -74,7 +71,7 @@
                     <div class="row">
                         <div id="headerSectionCliente" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Detalhe do Chamado: </h3>
+                            <h3 class="position"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</h3>
                         </div>
                         <div id="divForm2" class="divForm2">
                             <form method="POST" action="#" id="form2" class="form2">
@@ -90,9 +87,9 @@
                                 <hr></hr>
                                 <label id="lblStatus" class="labelChamado">Status:</label>
                                 <select title="Selecione o status" class="position select" name="statusChamado">
-                                    <option></option>
-                                </select><br/><br/>                           
-                                <input type="submit" name="btnAbrirChamado" id="btnDetalheChamado" class="btnAbrirChamado margin" value="Salvar">
+                                    <option>Aberto</option>
+                                </select><br/><br/>                                
+                                <input type="submit" name="btnAbrirChamado" id="btnAbrirChamado" class="btnAbrirChamado margin" value="Salvar">
                             </form>
                         </div>
                     </div>

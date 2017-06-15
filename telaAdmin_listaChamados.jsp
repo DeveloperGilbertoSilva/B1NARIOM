@@ -186,7 +186,7 @@
                     <div class="row">
                         <div id="headerSectionAdmin" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Clientes</h3>
+                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Chamados</h3>
                         </div>
                         <div id="divTableList" class="divTableList col-xs-10 col-xs-offset-1">
                             <center>

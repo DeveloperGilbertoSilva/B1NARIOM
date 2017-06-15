@@ -1,7 +1,7 @@
 <%-- 
     Document   : telaCliente
     Created on : 13/05/2017, 11:50:49
-    Author     : TestClienteistrador
+    Author     : TestAdministrador
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -34,53 +34,64 @@
                             <div id="nomeCliente" class="margin nome">Gilberto Lopes</div>
                             <h4 class="titleMat">Matrícula:</h4>
                             <div id="matriculaCliente" class="margin matricula">xxxxx-x</div>
-                            <h4 class="titleSetor">Setor:</h4>
-                            <div id="setorCliente" class="margin setor">TI</div>
-                            <h4 class="titleTelefone">Telefone:</h4>
-                            <div id="telefoneCliente" class="margin telefone">1234-5678</div>
-
+                            <h5 id="titleSetorCliente" class="titleSetor">Área Cliente</h5>
                         </div>
                         <!--==============================================-->
                         <div id="divMenuPerfilCliente" class="divMenuPerfil">
                             <nav id="navMenuCliente" class="navMenu">
-                                <ul id="ulMenuCliente" class="ulMenu" type="none">
-                                    <li id="liPesquisarChamadoCliente" class="liMenu liVisaoGeral">
-                                        <a href="telaCliente_pesquisarChamado.jsp">
-                                            <h5 class="op"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Pesquisar chamado</h5>
+                                <ul id="ulMenuCliente" class="position margin ulMenu" type="none">
+                                    <li id="liVisaoGeralCliente" class="margin liVisaoGeral liVisaoGeralCliente">
+                                        <a href="#">
+                                            <h5 class="op"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;Visão Geral</h5>
                                         </a>
                                     </li>
-                                </ul>
+
+                                    <li id="li1" class="margin liVisaoGeral li1">
+                                        <a href="#">
+                                            <h5 class="op"><i class="fa fa-envelope iMenu" aria-hidden="true"></i>
+                                                &nbsp;&nbsp;Chamado&nbsp;&nbsp;<i class="fa fa-caret-down drop1" aria-hidden="true"></i>
+                                            </h5>
+                                        </a>
+                                        <ul id="ulSubMenu1" class="ulSubMenu ulSubMenu1">
+                                            <li id="liSubMenuChamado1" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-folder-open"></i>&nbsp;&nbsp;Abrir Chamado</a>
+                                            </li>
+                                            <li id="liSubMenuChamado2" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-search-plus"></i>&nbsp;&nbsp;Pesquisar Chamado</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                             </nav>
                         </div>
                     </div>
                 </div>
                 <!--==============================================-->
-                <!--=======================FORMULÁRIO DE CHAMADO=======================-->
-                <div id="divAbrirChamadoCliente" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
+                <!--=======================CONTROLE DE CHAMADOS=======================-->
+                <div id="divControlCliente" class="controleChamado col-xs-12 col-md-9 col-md-offset-3">
                     <div class="row">
                         <div id="headerSectionCliente" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Abrir Chamado</h3>
+                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Chamados</h3>
                         </div>
-                        <div id="divFormAbrirChamadoCliente" class="divFormAbrirChamado">
-                            <form method="POST" action="#" id="formAbrirChamadoCliente" class="formAbrirChamado">
-                                <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
-                                <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
-                                <hr></hr>
-                                <label id="lblLocalidade" class="labelChamado">Localidade:</label>
-                                <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">
-                                
-                                <label id="lblEtiqEquipamento" class="labelChamado">Etiqueta do Equipamento:</label>
-                                <input type="text" name="etiquetaEquipamento" maxlength="20" id="inputEtiqueta" class="input inputChamado margin">
-                                <br/>
-                                <hr></hr>
-                                <label id="lblStatus" class="labelChamado">Status:</label>
-                                <select title="Selecione o status" class="position select">
-                                    <option></option>
-                                </select><br/><br/>
-                                
-                                <input type="submit" name="btnAbrirChamado" id="btnAbrirChamadoCliente" class="btnAbrirChamado margin" value="Salvar">
-                            </form>
+                        <div id="divTableList" class="divTableList col-xs-10 col-xs-offset-1">
+                            <center>
+                                <table class="tableList table table-responsive">
+                                    <tr>
+                                        <th>Número</th>
+                                        <th>Localidade</th>
+                                        <th>Etiqueta</th>
+                                        <th>Status</th>
+                                        <th>Opções</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#" title="Detalhar"><i class="fa fa-search" aria-hidden="true"></i></a> ou <a href="#" title="Cancelar"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                    </tr>
+                                </table>
+                            </center>
                         </div>
                     </div>
                 </div>

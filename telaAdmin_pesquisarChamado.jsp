@@ -190,8 +190,8 @@
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
                             <h3 class="position"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Pesquisar por Chamado</h3>
                         </div>
-                        <div id="divFormAdmin" class="divFormAbrirChamado">
-                            <form method="POST" action="#" id="formPesquisarChamadoCliente" class="formAbrirChamado">
+                        <div id="divForm2" class="divForm2">
+                            <form method="POST" action="#" id="form2" class="form2">
                                 <label id="lblPesquisa" class="labelChamado">Digite o número do chamado:</label>
                                 <input type="text" name="numeroChamado" maxlength="20" id="inputNumeroChamado" class="input inputChamado margin">
                                 
