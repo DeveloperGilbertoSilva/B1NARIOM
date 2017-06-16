@@ -144,6 +144,10 @@
                             <form method="POST" action="#" id="form2" class="form2">
                                 <label id="lblDescricao" class="labelChamado">Descrição: </label><br/>
                                 <textarea name="descricaoChamado" rows="4" cols="30" maxlength="200" placeholder="Digite uma breve descrição"></textarea><br/><br/>
+                                <label id="lblNome" class="labelChamado">Nome:</label>
+                                <input type="text" name="nomeRequisitante" maxlength="20" id="inputNome" class="input inputChamado margin"><br/><br/>
+                                <label id="lblData" class="labelChamado">Data de abertura:</label>
+                                <input type="text" name="dataAbertura" maxlength="20" id="inputData" class="input inputChamado margin"><br/><br/>
                                 <hr></hr>
                                 <label id="lblLocalidade" class="labelChamado">Localidade:</label>
                                 <input type="text" name="localidadeChamado" maxlength="20" id="inputLocalidade" class="input inputChamado margin">

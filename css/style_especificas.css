@@ -320,7 +320,7 @@ html,body{height: 100%;}
         width: 160px;
         margin-left: 20px;
         font-size: 16px;}
-/*==================FORMULÁRIO DE CHAMADO==================*/
+/*==================FORMULÁRIOS DE CHAMADO==================*/
     .form2{width: 600px;}
     #lblLocalidade{
         width: 100px;
@@ -335,6 +335,16 @@ html,body{height: 100%;}
         display: inline-block;
         width: 80px;
         text-align: center;}
+    
+    #lblNome{width: 60px;}
+    #lblData{
+      width: 145px;
+      float: left;
+      position: relative;
+      left: 79px;}
+    #inputData{
+        position: relative;
+        left: -40px;}
 }
 /*==================*/
 /*============================================*/
