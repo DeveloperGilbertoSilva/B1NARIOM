@@ -158,6 +158,9 @@
                                             <li id="liSubMenuMenu2" class="liSubMenu">
                                                 <a href="#"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Listar Menus</a>
                                             </li>
+                                            <li id="liSubMenuMenu3" class="liSubMenu">
+                                                <a href="#"><i class="fa fa-address-card"></i>&nbsp;&nbsp;Gerenciar Menu Perfil</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     

@@ -179,6 +179,8 @@
                                             </li>
                                         </ul>
                                     </li>
+
+
                             </nav>
                         </div>
                     </div>
@@ -189,24 +191,25 @@
                     <div class="row">
                         <div id="headerSectionAdmin" class="position headerSection">
                             <div class="btnOpenMenu"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                            <h3 class="position"><i class="fa fa-list-ol" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Chamados</h3>
+                            <h3 class="position"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Gerenciar Menu Perfil</h3>
                         </div>
                         <div id="divTableList" class="divTableList col-xs-10 col-xs-offset-1">
                             <center>
+                                <h4>ID: PERFIL:</h4><br/>
+                                <p>Menu:&nbsp;&nbsp;</p><select name="menuPerfil" style="display: inline-block;">
+                                    <option>Selecione...</option>
+                                </select>
+                                <button><i class="fa fa-plus-circle"></i></button><br/><br/>
                                 <table class="tableList table table-responsive">
                                     <tr>
-                                        <th>Número</th>
-                                        <th>Localidade</th>
-                                        <th>Etiqueta</th>
-                                        <th>Status</th>
-                                        <th>Opções</th>
+                                        <th>Id</th>
+                                        <th>Nome</th>
+                                        <th>Opção</th>
                                     </tr>
                                     <tr>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><a href="#" title="Alterar"><i class="fa fa-pencil" aria-hidden="true"></i></a> ou <a href="#" title="Excluir"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                        <td><a href="#" title="Excluir"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                     </tr>
                                 </table>
                             </center>
